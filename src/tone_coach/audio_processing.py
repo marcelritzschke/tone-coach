@@ -96,12 +96,18 @@ def extract_pitch(sound_data):
         Tuple containing times (in seconds) and corresponding frequency values (in Hz).
 
     """
-    with tempfile.NamedTemporaryFile(suffix=".wav", delete=True) as tmp:
+    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
         tmp.write(sound_data)
         tmp.flush()
-        sound = parselmouth.Sound(tmp.name)
-        pitch = sound.to_pitch()
+        tmp_path = tmp.name
+    try:
+        sound = parselmouth.Sound(tmp_path)
+        pitch = sound.to_pitch_ac()
         times = pitch.xs()
         frequencies = pitch.selected_array["frequency"]
         valid = ~np.isnan(frequencies)
         return times[valid], frequencies[valid]
+    finally:
+        # Clean up the temporary file
+        import os
+        os.remove(tmp_path)
