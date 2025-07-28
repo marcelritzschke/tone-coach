@@ -1,0 +1,81 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tone-coach"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "Marcel Ritzschke", email = "marcel.ritzschke@mail.de" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "streamlit",
+  "praat-parselmouth",
+  "plotly",
+  "numpy",
+  "streamlit-webrtc",
+  "av",
+  "ruff",
+]
+
+[tool.hatch.version]
+path = "src/tone_coach/__about__.py"
+
+[tool.hatch.envs.default.scripts]
+start = "streamlit run src/tone_coach/app.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/tone_coach tests}"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+  "src/tone_coach",
+]
+
+[tool.ruff]
+exclude = ["**/__init__.py"]
+line-length = 88
+indent-width = 4
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle
+    "F",    # pyflakes
+    "I",    # isort
+    "D",    # pydocstyle (docstrings)
+    "N",    # pep8-naming
+    "UP",   # pyupgrade
+    "B"     # flake8-bugbear
+]
+ignore = [
+    "D203",
+    "D213",
+]
+fixable = ["ALL"]
+unfixable = []
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107"] # No docstrings in tests
