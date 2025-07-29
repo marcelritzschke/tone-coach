@@ -67,19 +67,37 @@ with st.container(border=True):
         status_placeholder.info("Processing both recordings...")
 
         ref_times, ref_pitch = extract_pitch(reference_audio)
+        ref_times_filtered, ref_pitch_filtered = extract_pitch(
+            reference_audio, filter=True
+        )
         user_times, user_pitch = extract_pitch(st.session_state.user_audio_recorded)
+
+        show_unfiltered = st.checkbox("Show Unfiltered Pitch Curve", value=False)
 
         # Plot
         fig = go.Figure()
+        if show_unfiltered:
+            fig.add_trace(
+                go.Scatter(
+                    x=ref_times,
+                    y=ref_pitch,
+                    mode="lines",
+                    name="Reference Unfiltered",
+                    line=dict(color="blue", dash="dashdot"),
+                    connectgaps=False,
+                )
+            )
         fig.add_trace(
             go.Scatter(
-                x=ref_times,
-                y=ref_pitch,
+                x=ref_times_filtered,
+                y=ref_pitch_filtered,
                 mode="lines",
                 name="Reference",
                 line=dict(color="blue"),
+                connectgaps=False,
             )
         )
+
         fig.add_trace(
             go.Scatter(
                 x=user_times,
@@ -95,5 +113,6 @@ with st.container(border=True):
             yaxis_title="Pitch (Hz)",
             hovermode="x unified",
         )
+        fig.update_yaxes(range=[0, 500])
         status_placeholder.empty()
         st.plotly_chart(fig, use_container_width=True)
