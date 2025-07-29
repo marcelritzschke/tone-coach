@@ -31,6 +31,7 @@ dependencies = [
   "numpy",
   "streamlit-webrtc",
   "av",
+  "pydub",
   "ruff",
 ]
 
@@ -71,6 +72,7 @@ select = [
     "B"     # flake8-bugbear
 ]
 ignore = [
+    "D103", # Missing docstring in public function
     "D203",
     "D213",
 ]
