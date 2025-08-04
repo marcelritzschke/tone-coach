@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "tone-coach"
+name = "tone-coach-backend"
 dynamic = ["version"]
-description = ''
+description = "Backend for Tone Coach (FastAPI + Pitch Analysis)"
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
@@ -25,21 +25,20 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dependencies = [
-  "streamlit",
   "praat-parselmouth",
-  "plotly",
-  "numpy",
-  "streamlit-webrtc",
-  "av",
+  "fastapi",
+  "uvicorn[standard]",
+  "pydantic",
+  "python-multipart",
   "pydub",
   "ruff",
 ]
 
 [tool.hatch.version]
-path = "src/tone_coach/__about__.py"
+path = "app/__about__.py"
 
 [tool.hatch.envs.default.scripts]
-start = "streamlit run src/tone_coach/app.py"
+start = "uvicorn app.main:app --reload --port 8000"
 
 [tool.hatch.envs.types]
 extra-dependencies = [
@@ -47,11 +46,6 @@ extra-dependencies = [
 ]
 [tool.hatch.envs.types.scripts]
 check = "mypy --install-types --non-interactive {args:src/tone_coach tests}"
-
-[tool.hatch.build.targets.wheel]
-packages = [
-  "src/tone_coach",
-]
 
 [tool.ruff]
 exclude = ["**/__init__.py"]
