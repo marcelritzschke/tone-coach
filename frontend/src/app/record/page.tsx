@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect } from 'react';
 
 import ToneChart from '@/components/ToneChart';
+import { uploadAudio } from '@/lib/upload-audio';
+import { PitchAnalysisResult } from '@/types/pitch';
 
 export default function RecordPage() {
   // Mock phrase deck
@@ -22,6 +24,7 @@ export default function RecordPage() {
   const [isRecording, setIsRecording] = useState(false);
   const [userAudioURL, setUserAudioURL] = useState<string | null>(null);
   const [barPosition, setBarPosition] = useState<number | null>(null);
+  const [pitchResult, setPitchResult] = useState<PitchAnalysisResult | null>(null);
 
   useEffect(() => {
     if (userAudioRef.current && audioPlayTimestamp) {
@@ -55,14 +58,19 @@ export default function RecordPage() {
 
   const startRecording = async () => {
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    mediaRecorderRef.current = new MediaRecorder(stream);
+    mediaRecorderRef.current = new MediaRecorder(stream, {
+      mimeType: 'audio/webm',
+    });
     chunksRef.current = [];
 
     mediaRecorderRef.current.ondataavailable = (e) => chunksRef.current.push(e.data);
-    mediaRecorderRef.current.onstop = () => {
-      const blob = new Blob(chunksRef.current, { type: 'audio/wav' });
+    mediaRecorderRef.current.onstop = async () => {
+      const blob = new Blob(chunksRef.current, { type: 'audio/webm' });
       setUserAudioURL(URL.createObjectURL(blob));
       // TODO: send blob to FastAPI backend
+      console.log('Recording stopped, uploading audio...');
+      const pitchResult = await uploadAudio(blob);
+      setPitchResult(pitchResult);
     };
 
     mediaRecorderRef.current.start();
@@ -115,8 +123,12 @@ export default function RecordPage() {
         </div>
 
         {/* Pitch Curve Chart */}
-        {userAudioURL && (
-          <ToneChart setAudioPlayTimestamp={setAudioPlayTimestamp} barPosition={barPosition} />
+        {userAudioURL && pitchResult && (
+          <ToneChart
+            setAudioPlayTimestamp={setAudioPlayTimestamp}
+            barPosition={barPosition}
+            pitchResult={pitchResult}
+          />
         )}
 
         {/* Navigation */}
