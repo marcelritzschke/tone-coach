@@ -13,6 +13,7 @@ import { getRelativePosition } from 'chart.js/helpers';
 import { Chart } from 'react-chartjs-2';
 
 import verticalBarPlugin from '@/lib/vertical-bar-plugin';
+import { PitchFrame, PitchAnalysisResult } from '@/types/pitch';
 
 ChartJS.register(
   LineElement,
@@ -30,11 +31,25 @@ interface ToneChartProps {
   barPosition: number | null;
 }
 
-const ToneChart: React.FC<ToneChartProps> = ({ setAudioPlayTimestamp, barPosition }) => {
+interface ToneChartProps {
+  setAudioPlayTimestamp: React.Dispatch<React.SetStateAction<any>>;
+  barPosition: number | null;
+  pitchResult: PitchAnalysisResult;
+}
+
+const ToneChart: React.FC<ToneChartProps> = ({
+  setAudioPlayTimestamp,
+  barPosition,
+  pitchResult,
+}) => {
   // Mock pitch data
   const mockReferenceCurve = [100, 110, 105, 120, 130, 125, 140];
-  const mockUserCurve = [90, 100, 110, 118, 135, 130, 138];
-  const timeLabels = [0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0];
+  // const mockUserCurve = [90, 100, 110, 118, 135, 130, 138];
+  const userPitch = pitchResult.frames.map((frame: PitchFrame) =>
+    frame.pitch > 0 ? frame.pitch : null,
+  );
+  // const timeLabels = [0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0];
+  const timeLabels = pitchResult.frames.map((frame: PitchFrame) => frame.time);
 
   const chartRef = useRef<ChartJS>(null);
 
@@ -59,17 +74,17 @@ const ToneChart: React.FC<ToneChartProps> = ({ setAudioPlayTimestamp, barPositio
   const chartData = {
     labels: timeLabels,
     datasets: [
-      {
-        label: 'Reference',
-        data: mockReferenceCurve,
-        borderColor: '#4c8bf5',
-        backgroundColor: '#4c8bf5',
-        tension: 0.3,
-        fill: false,
-      },
+      // {
+      //   label: 'Reference',
+      //   data: mockReferenceCurve,
+      //   borderColor: '#4c8bf5',
+      //   backgroundColor: '#4c8bf5',
+      //   tension: 0.3,
+      //   fill: false,
+      // },
       {
         label: 'Your Recording',
-        data: mockUserCurve,
+        data: userPitch,
         borderColor: '#ff9800',
         backgroundColor: '#ff9800',
         tension: 0.3,
