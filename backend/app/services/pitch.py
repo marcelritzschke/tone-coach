@@ -20,6 +20,9 @@ def filter_outlier_frames(times, freqs):
     if len(freqs) == 0:
         return times, freqs
 
+    times = np.array(times)
+    freqs = np.array(freqs)
+
     median_pitch = np.median(freqs)
     max_allowed = median_pitch * 2  # Allow up to 2x (next octave)
     min_allowed = median_pitch / 2  # Allow up to 1/2x (previous octave)
@@ -72,13 +75,13 @@ def extract_pitch(audio_file: AudioSegment, filter=False):
         pitch = sound.to_pitch_ac()
         times = pitch.xs().tolist()
         freqs = pitch.selected_array["frequency"].tolist()
-        # sampling_rate = times[1] - times[0]
+        sampling_rate = times[1] - times[0]
 
-        # if filter:
+        if filter:
         #     times, freqs = filter_unvoiced_frames(times, freqs)
-        #     times, freqs = filter_outlier_frames(times, freqs)
+            # times, freqs = filter_outlier_frames(times, freqs)
         #     times, freqs = add_gaps(times, freqs, gap_threshold=sampling_rate)
-        #     freqs = smooth_curve(freqs, window=1)
+            freqs = smooth_curve(freqs, window=1)
 
         return times, freqs
     finally:
@@ -88,17 +91,33 @@ def extract_pitch(audio_file: AudioSegment, filter=False):
         os.remove(tmp_path)
 
 
-def analyze_audio(audio_bytes: bytes) -> PitchResponse:
+def analyze_recorded_audio(audio_bytes: bytes) -> PitchResponse:
     """Use Parselmouth to extract pitch curve."""
     audio = AudioSegment.from_file(BytesIO(audio_bytes), format="webm")
     audio = audio.set_channels(NUM_CHANNELS_FOR_ANALYZE)
     audio = audio.set_frame_rate(SAMPLE_RATE_FOR_ANALYZE)
     audio = audio.set_sample_width(2)  # 16-bit PCM
 
-    times, pitch = extract_pitch(audio)
+    times, pitch = extract_pitch(audio, filter=True)
 
     return PitchResponse(
         time=times,
         pitch=pitch,
         message="Pitch analysis successful (mock data).",
+    )
+
+
+def analyze_tts_audio(audio_path: str) -> PitchResponse:
+    """Use Parselmouth to extract pitch curve from a TTS MP3 file."""
+    audio = AudioSegment.from_file(audio_path, format="mp3")
+    audio = audio.set_channels(NUM_CHANNELS_FOR_ANALYZE)
+    audio = audio.set_frame_rate(SAMPLE_RATE_FOR_ANALYZE)
+    audio = audio.set_sample_width(2)  # 16-bit PCM
+
+    times, pitch = extract_pitch(audio, filter=True)
+
+    return PitchResponse(
+        time=times,
+        pitch=pitch,
+        message="Pitch analysis successful.",
     )

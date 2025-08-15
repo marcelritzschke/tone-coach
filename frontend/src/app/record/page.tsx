@@ -3,33 +3,68 @@
 import { useState, useRef, useEffect } from 'react';
 
 import ToneChart from '@/components/ToneChart';
+import TextToSpeech from '@/components/TextToSpeech';
 import { uploadAudio } from '@/lib/upload-audio';
 import { PitchAnalysisResult } from '@/types/pitch';
+import { getPhrasesCount, getPhrase } from '@/lib/fetch-phrases';
 
 export default function RecordPage() {
-  // Mock phrase deck
-  const phrases = [
-    { text: '你在干嘛呢？', audio: '/audio/reference1.mp3' },
-    { text: '真的吗？', audio: '/audio/reference2.mp3' },
-    { text: '好久不见！', audio: '/audio/reference3.mp3' },
-  ];
+  const [phrasesCount, setPhrasesCount] = useState<number | null>(null);
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const currentPhrase = phrases[currentIndex];
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+  const [currentPhrase, setCurrentPhrase] = useState(''); // '你在干嘛呢？'
 
-  const referenceAudioRef = useRef<HTMLAudioElement | null>(null);
   const userAudioRef = useRef<HTMLAudioElement | null>(null);
+  const referenceAudioRef = useRef<HTMLAudioElement | null>(null);
   const [audioPlayTimestamp, setAudioPlayTimestamp] = useState<number | null>(null);
+  const [selectedAudio, setSelectedAudio] = useState<'reference' | 'user'>('user');
 
   const [isRecording, setIsRecording] = useState(false);
   const [userAudioURL, setUserAudioURL] = useState<string | null>(null);
   const [barPosition, setBarPosition] = useState<number | null>(null);
   const [pitchResult, setPitchResult] = useState<PitchAnalysisResult | null>(null);
+  const [pitchResultTTS, setPitchResultTTS] = useState<PitchAnalysisResult | null>(null);
 
   useEffect(() => {
-    if (userAudioRef.current && audioPlayTimestamp) {
-      userAudioRef.current.currentTime = audioPlayTimestamp;
-      userAudioRef.current.play();
+    const fetchPhrasesCount = async () => {
+      try {
+        const count = await getPhrasesCount();
+        setPhrasesCount(count);
+        if (count > 0) {
+          setCurrentIndex(0);
+        }
+      } catch (error) {
+        console.error('Error fetching phrases count:', error);
+      }
+    };
+    fetchPhrasesCount();
+  }, []);
+
+  useEffect(() => {
+    const fetchPhrase = async (index: number) => {
+      try {
+        const phrase = await getPhrase(index);
+        setCurrentPhrase(phrase);
+      } catch (error) {
+        console.error('Error fetching phrase:', error);
+      }
+    };
+    if (currentIndex !== null) {
+      fetchPhrase(currentIndex);
+    }
+  }, [currentIndex]);
+
+  useEffect(() => {
+    if (selectedAudio === 'user') {
+      if (userAudioRef.current && audioPlayTimestamp) {
+        userAudioRef.current.currentTime = audioPlayTimestamp;
+        userAudioRef.current.play();
+      }
+    } else {
+      if (referenceAudioRef.current && audioPlayTimestamp) {
+        referenceAudioRef.current.currentTime = audioPlayTimestamp;
+        referenceAudioRef.current.play();
+      }
     }
   }, [audioPlayTimestamp]);
 
@@ -51,6 +86,12 @@ export default function RecordPage() {
       syncVerticalBarWithAudio(userAudioRef.current, setBarPosition);
     }
   }, [userAudioURL, userAudioRef]);
+
+  useEffect(() => {
+    if (referenceAudioRef.current) {
+      syncVerticalBarWithAudio(referenceAudioRef.current, setBarPosition);
+    }
+  }, [referenceAudioRef]);
 
   // Recording (simplified mock)
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -82,24 +123,30 @@ export default function RecordPage() {
     setIsRecording(false);
   };
 
-  const nextPhrase = () => setCurrentIndex((prev) => (prev + 1) % phrases.length);
-  const prevPhrase = () => setCurrentIndex((prev) => (prev === 0 ? phrases.length - 1 : prev - 1));
+  const nextPhrase = () => {
+    phrasesCount && setCurrentIndex((prev) => (prev + 1) % phrasesCount);
+  };
+  const prevPhrase = () => {
+    phrasesCount && setCurrentIndex((prev) => (prev === 0 ? phrasesCount - 1 : prev - 1));
+  };
 
   return (
     <>
       <div className="container my-5 text-light">
         {/* Flashcard */}
         <div className="card bg-dark shadow p-4 mb-4">
-          <h2 className="mb-3">{currentPhrase.text}</h2>
-          <div className="mb-3">
-            <audio ref={referenceAudioRef} src={currentPhrase.audio}></audio>
-            <button
-              className="btn btn-primary me-2"
-              onClick={() => referenceAudioRef.current?.play()}
-            >
-              ▶ Play Original
-            </button>
-          </div>
+          {currentPhrase ? (
+            <>
+              <h2 className="mb-3">{currentPhrase}</h2>
+              <TextToSpeech
+                text={currentPhrase}
+                setPitchResultTTS={setPitchResultTTS}
+                referenceAudioRef={referenceAudioRef}
+              />
+            </>
+          ) : (
+            <h2 className="mb-3">Loading phrase...</h2>
+          )}
         </div>
 
         {/* Recording Controls */}
@@ -123,11 +170,14 @@ export default function RecordPage() {
         </div>
 
         {/* Pitch Curve Chart */}
-        {userAudioURL && pitchResult && (
+        {userAudioURL && pitchResult && pitchResultTTS && (
           <ToneChart
             setAudioPlayTimestamp={setAudioPlayTimestamp}
+            selectedAudio={selectedAudio}
+            setSelectedAudio={setSelectedAudio}
             barPosition={barPosition}
             pitchResult={pitchResult}
+            pitchResultTTS={pitchResultTTS}
           />
         )}
 
