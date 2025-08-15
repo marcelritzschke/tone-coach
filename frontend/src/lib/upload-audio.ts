@@ -28,3 +28,20 @@ export const uploadAudio = async (blob: Blob): Promise<PitchAnalysisResult> => {
 
   return pitchResult;
 };
+
+export const fetchTTSAudio = async (
+  text: string,
+): Promise<{ audioUrl: string; pitchResult: PitchAnalysisResult }> => {
+  const response = await fetch(`http://localhost:8000/tts?text=${encodeURIComponent(text)}`);
+  if (!response.ok) {
+    throw new Error('Failed to fetch TTS audio');
+  }
+  // console.log(await response.json());
+  // const audioBlob = await response.blob();
+  // const audioUrl = URL.createObjectURL(audioBlob);
+  const data = await response.json();
+  console.log('TTS response data:', data);
+  const audioUrl = data.audio_url;
+  const pitchResult = parsePitchData(data.pitch);
+  return { audioUrl, pitchResult };
+};

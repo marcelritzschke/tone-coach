@@ -1,7 +1,7 @@
 from fastapi import APIRouter, File, UploadFile
 
 from app.models.response import PitchResponse
-from app.services.pitch import analyze_audio
+from app.services.pitch import analyze_recorded_audio
 
 router = APIRouter(prefix="/analyze", tags=["Analyze"])
 
@@ -10,5 +10,5 @@ router = APIRouter(prefix="/analyze", tags=["Analyze"])
 async def analyze(file: UploadFile = File(...)):
     """Accept audio file and return pitch curve data."""
     contents = await file.read()  # We have the binary audio data here
-    pitch_data = analyze_audio(contents)
+    pitch_data = analyze_recorded_audio(contents)
     return pitch_data

@@ -32,6 +32,8 @@ dependencies = [
   "python-multipart",
   "pydub",
   "ruff",
+  "elevenlabs",
+  "python-dotenv"
 ]
 
 [tool.hatch.version]
