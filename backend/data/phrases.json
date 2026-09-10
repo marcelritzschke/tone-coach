@@ -1,0 +1,8185 @@
+[
+  {
+    "id": "p001",
+    "hanzi": "你好",
+    "gloss": "Hello",
+    "words": [
+      "你好"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "ní",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "3-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 你好"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p002",
+    "hanzi": "你好吗",
+    "gloss": "How are you?",
+    "words": [
+      "你好",
+      "吗"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "ní",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "citationPinyin": "ma",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-5"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-5"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 你好"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p003",
+    "hanzi": "我很好",
+    "gloss": "I'm doing well",
+    "words": [
+      "我",
+      "很",
+      "好"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hén",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 我很好"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "p004",
+    "hanzi": "谢谢你",
+    "gloss": "Thank you",
+    "words": [
+      "谢谢",
+      "你"
+    ],
+    "syllables": [
+      {
+        "hanzi": "谢",
+        "pinyin": "xiè",
+        "citationPinyin": "xiè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "谢",
+        "pinyin": "xiè",
+        "citationPinyin": "xiè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p005",
+    "hanzi": "不客气",
+    "gloss": "You're welcome",
+    "words": [
+      "不",
+      "客气"
+    ],
+    "syllables": [
+      {
+        "hanzi": "不",
+        "pinyin": "bú",
+        "citationPinyin": "bù",
+        "citationTone": 4,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "bu-sandhi"
+      },
+      {
+        "hanzi": "客",
+        "pinyin": "kè",
+        "citationPinyin": "kè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "气",
+        "pinyin": "qì",
+        "citationPinyin": "qì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-4",
+      "4-4"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-4"
+    ],
+    "sandhiNotes": [
+      "不 → tone 2 before tone 4"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p006",
+    "hanzi": "对不起",
+    "gloss": "I'm sorry",
+    "words": [
+      "对不起"
+    ],
+    "syllables": [
+      {
+        "hanzi": "对",
+        "pinyin": "duì",
+        "citationPinyin": "duì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "citationPinyin": "bù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "起",
+        "pinyin": "qǐ",
+        "citationPinyin": "qǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p007",
+    "hanzi": "没关系",
+    "gloss": "It doesn't matter",
+    "words": [
+      "没关系"
+    ],
+    "syllables": [
+      {
+        "hanzi": "没",
+        "pinyin": "méi",
+        "citationPinyin": "méi",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "关",
+        "pinyin": "guān",
+        "citationPinyin": "guān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "系",
+        "pinyin": "xì",
+        "citationPinyin": "xì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-1",
+      "1-4"
+    ],
+    "citationTonePairs": [
+      "2-1",
+      "1-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p008",
+    "hanzi": "再见",
+    "gloss": "Goodbye",
+    "words": [
+      "再见"
+    ],
+    "syllables": [
+      {
+        "hanzi": "再",
+        "pinyin": "zài",
+        "citationPinyin": "zài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "见",
+        "pinyin": "jiàn",
+        "citationPinyin": "jiàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4"
+    ],
+    "citationTonePairs": [
+      "4-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p009",
+    "hanzi": "早上好",
+    "gloss": "Good morning",
+    "words": [
+      "早上好"
+    ],
+    "syllables": [
+      {
+        "hanzi": "早",
+        "pinyin": "zǎo",
+        "citationPinyin": "zǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "上",
+        "pinyin": "shàng",
+        "citationPinyin": "shàng",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p010",
+    "hanzi": "晚安",
+    "gloss": "Good night",
+    "words": [
+      "晚安"
+    ],
+    "syllables": [
+      {
+        "hanzi": "晚",
+        "pinyin": "wǎn",
+        "citationPinyin": "wǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "安",
+        "pinyin": "ān",
+        "citationPinyin": "ān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-1"
+    ],
+    "citationTonePairs": [
+      "3-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p011",
+    "hanzi": "请进",
+    "gloss": "Please come in",
+    "words": [
+      "请",
+      "进"
+    ],
+    "syllables": [
+      {
+        "hanzi": "请",
+        "pinyin": "qǐng",
+        "citationPinyin": "qǐng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "进",
+        "pinyin": "jìn",
+        "citationPinyin": "jìn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4"
+    ],
+    "citationTonePairs": [
+      "3-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p012",
+    "hanzi": "请坐",
+    "gloss": "Please sit down",
+    "words": [
+      "请",
+      "坐"
+    ],
+    "syllables": [
+      {
+        "hanzi": "请",
+        "pinyin": "qǐng",
+        "citationPinyin": "qǐng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "坐",
+        "pinyin": "zuò",
+        "citationPinyin": "zuò",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4"
+    ],
+    "citationTonePairs": [
+      "3-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p013",
+    "hanzi": "请问",
+    "gloss": "Excuse me, may I ask",
+    "words": [
+      "请问"
+    ],
+    "syllables": [
+      {
+        "hanzi": "请",
+        "pinyin": "qǐng",
+        "citationPinyin": "qǐng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "问",
+        "pinyin": "wèn",
+        "citationPinyin": "wèn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4"
+    ],
+    "citationTonePairs": [
+      "3-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p014",
+    "hanzi": "我叫小明",
+    "gloss": "My name is Xiao Ming",
+    "words": [
+      "我",
+      "叫",
+      "小明"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "叫",
+        "pinyin": "jiào",
+        "citationPinyin": "jiào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "小",
+        "pinyin": "xiǎo",
+        "citationPinyin": "xiǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "明",
+        "pinyin": "míng",
+        "citationPinyin": "míng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-3",
+      "3-2"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-3",
+      "3-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p015",
+    "hanzi": "你叫什么名字",
+    "gloss": "What is your name?",
+    "words": [
+      "你",
+      "叫",
+      "什么",
+      "名字"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "叫",
+        "pinyin": "jiào",
+        "citationPinyin": "jiào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "什",
+        "pinyin": "shén",
+        "citationPinyin": "shén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "么",
+        "pinyin": "me",
+        "citationPinyin": "me",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "名",
+        "pinyin": "míng",
+        "citationPinyin": "míng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "字",
+        "pinyin": "zì",
+        "citationPinyin": "zì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-2",
+      "2-5",
+      "5-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-2",
+      "2-5",
+      "5-2",
+      "2-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p016",
+    "hanzi": "很高兴认识你",
+    "gloss": "Nice to meet you",
+    "words": [
+      "很",
+      "高兴",
+      "认识",
+      "你"
+    ],
+    "syllables": [
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "高",
+        "pinyin": "gāo",
+        "citationPinyin": "gāo",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "兴",
+        "pinyin": "xìng",
+        "citationPinyin": "xìng",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "认",
+        "pinyin": "rèn",
+        "citationPinyin": "rèn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "识",
+        "pinyin": "shí",
+        "citationPinyin": "shí",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-1",
+      "1-4",
+      "4-4",
+      "4-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "3-1",
+      "1-4",
+      "4-4",
+      "4-2",
+      "2-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": true
+  },
+  {
+    "id": "p017",
+    "hanzi": "你是哪国人",
+    "gloss": "What country are you from?",
+    "words": [
+      "你",
+      "是",
+      "哪",
+      "国人"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "citationPinyin": "shì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "哪",
+        "pinyin": "nǎ",
+        "citationPinyin": "nǎ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "国",
+        "pinyin": "guó",
+        "citationPinyin": "guó",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "人",
+        "pinyin": "rén",
+        "citationPinyin": "rén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-3",
+      "3-2",
+      "2-2"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-3",
+      "3-2",
+      "2-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p018",
+    "hanzi": "我是中国人",
+    "gloss": "I am Chinese",
+    "words": [
+      "我",
+      "是",
+      "中国",
+      "人"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "citationPinyin": "shì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "中",
+        "pinyin": "zhōng",
+        "citationPinyin": "zhōng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "国",
+        "pinyin": "guó",
+        "citationPinyin": "guó",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "人",
+        "pinyin": "rén",
+        "citationPinyin": "rén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-1",
+      "1-2",
+      "2-2"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-1",
+      "1-2",
+      "2-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p019",
+    "hanzi": "我是学生",
+    "gloss": "I am a student",
+    "words": [
+      "我",
+      "是",
+      "学生"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "citationPinyin": "shì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "学",
+        "pinyin": "xué",
+        "citationPinyin": "xué",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "生",
+        "pinyin": "shēng",
+        "citationPinyin": "shēng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-2",
+      "2-1"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-2",
+      "2-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p020",
+    "hanzi": "他是老师",
+    "gloss": "He is a teacher",
+    "words": [
+      "他",
+      "是",
+      "老师"
+    ],
+    "syllables": [
+      {
+        "hanzi": "他",
+        "pinyin": "tā",
+        "citationPinyin": "tā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "citationPinyin": "shì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "老",
+        "pinyin": "lǎo",
+        "citationPinyin": "lǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "师",
+        "pinyin": "shī",
+        "citationPinyin": "shī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-4",
+      "4-3",
+      "3-1"
+    ],
+    "citationTonePairs": [
+      "1-4",
+      "4-3",
+      "3-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p021",
+    "hanzi": "这是我的书",
+    "gloss": "This is my book",
+    "words": [
+      "这",
+      "是",
+      "我",
+      "的",
+      "书"
+    ],
+    "syllables": [
+      {
+        "hanzi": "这",
+        "pinyin": "zhè",
+        "citationPinyin": "zhè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "citationPinyin": "shì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "的",
+        "pinyin": "de",
+        "citationPinyin": "de",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "书",
+        "pinyin": "shū",
+        "citationPinyin": "shū",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-3",
+      "3-5",
+      "5-1"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-3",
+      "3-5",
+      "5-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p022",
+    "hanzi": "那是你的包",
+    "gloss": "That is your bag",
+    "words": [
+      "那",
+      "是",
+      "你",
+      "的",
+      "包"
+    ],
+    "syllables": [
+      {
+        "hanzi": "那",
+        "pinyin": "nà",
+        "citationPinyin": "nà",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "citationPinyin": "shì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "的",
+        "pinyin": "de",
+        "citationPinyin": "de",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "包",
+        "pinyin": "bāo",
+        "citationPinyin": "bāo",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-3",
+      "3-5",
+      "5-1"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-3",
+      "3-5",
+      "5-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p023",
+    "hanzi": "这个多少钱",
+    "gloss": "How much is this?",
+    "words": [
+      "这个",
+      "多少",
+      "钱"
+    ],
+    "syllables": [
+      {
+        "hanzi": "这",
+        "pinyin": "zhè",
+        "citationPinyin": "zhè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "ge",
+        "citationPinyin": "ge",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "多",
+        "pinyin": "duō",
+        "citationPinyin": "duō",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "少",
+        "pinyin": "shǎo",
+        "citationPinyin": "shǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "钱",
+        "pinyin": "qián",
+        "citationPinyin": "qián",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-5",
+      "5-1",
+      "1-3",
+      "3-2"
+    ],
+    "citationTonePairs": [
+      "4-5",
+      "5-1",
+      "1-3",
+      "3-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": true
+  },
+  {
+    "id": "p024",
+    "hanzi": "太贵了",
+    "gloss": "That's too expensive",
+    "words": [
+      "太贵",
+      "了"
+    ],
+    "syllables": [
+      {
+        "hanzi": "太",
+        "pinyin": "tài",
+        "citationPinyin": "tài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "贵",
+        "pinyin": "guì",
+        "citationPinyin": "guì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "了",
+        "pinyin": "le",
+        "citationPinyin": "le",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-5"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p025",
+    "hanzi": "便宜一点",
+    "gloss": "A little cheaper",
+    "words": [
+      "便宜",
+      "一点"
+    ],
+    "syllables": [
+      {
+        "hanzi": "便",
+        "pinyin": "pián",
+        "citationPinyin": "pián",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "宜",
+        "pinyin": "yi",
+        "citationPinyin": "yi",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "yì",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "citationPinyin": "diǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-5",
+      "5-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "2-5",
+      "5-1",
+      "1-3"
+    ],
+    "sandhiNotes": [
+      "一 → tone 4 before tone 3"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "p026",
+    "hanzi": "我要买这个",
+    "gloss": "I want to buy this",
+    "words": [
+      "我要",
+      "买",
+      "这个"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "citationPinyin": "yào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "买",
+        "pinyin": "mǎi",
+        "citationPinyin": "mǎi",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "这",
+        "pinyin": "zhè",
+        "citationPinyin": "zhè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "ge",
+        "citationPinyin": "ge",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-3",
+      "3-4",
+      "4-5"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-3",
+      "3-4",
+      "4-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": true
+  },
+  {
+    "id": "p027",
+    "hanzi": "我不要那个",
+    "gloss": "I don't want that one",
+    "words": [
+      "我",
+      "不要",
+      "那个"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bú",
+        "citationPinyin": "bù",
+        "citationTone": 4,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "bu-sandhi"
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "citationPinyin": "yào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "那",
+        "pinyin": "nà",
+        "citationPinyin": "nà",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "ge",
+        "citationPinyin": "ge",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-2",
+      "2-4",
+      "4-4",
+      "4-5"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-4",
+      "4-4",
+      "4-5"
+    ],
+    "sandhiNotes": [
+      "不 → tone 2 before tone 4"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "p028",
+    "hanzi": "有没有别的",
+    "gloss": "Are there any others?",
+    "words": [
+      "有没有",
+      "别的"
+    ],
+    "syllables": [
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "没",
+        "pinyin": "méi",
+        "citationPinyin": "méi",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "别",
+        "pinyin": "bié",
+        "citationPinyin": "bié",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "的",
+        "pinyin": "de",
+        "citationPinyin": "de",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-2",
+      "2-3",
+      "3-2",
+      "2-5"
+    ],
+    "citationTonePairs": [
+      "3-2",
+      "2-3",
+      "3-2",
+      "2-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p029",
+    "hanzi": "我看看",
+    "gloss": "Let me take a look",
+    "words": [
+      "我",
+      "看看"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "看",
+        "pinyin": "kàn",
+        "citationPinyin": "kàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "看",
+        "pinyin": "kàn",
+        "citationPinyin": "kàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-4"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p030",
+    "hanzi": "好的",
+    "gloss": "All right",
+    "words": [
+      "好",
+      "的"
+    ],
+    "syllables": [
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "的",
+        "pinyin": "de",
+        "citationPinyin": "de",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-5"
+    ],
+    "citationTonePairs": [
+      "3-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p031",
+    "hanzi": "可以吗",
+    "gloss": "Is that okay?",
+    "words": [
+      "可以",
+      "吗"
+    ],
+    "syllables": [
+      {
+        "hanzi": "可",
+        "pinyin": "ké",
+        "citationPinyin": "kě",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "以",
+        "pinyin": "yǐ",
+        "citationPinyin": "yǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "citationPinyin": "ma",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-5"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-5"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 可以"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p032",
+    "hanzi": "当然可以",
+    "gloss": "Of course",
+    "words": [
+      "当然",
+      "可以"
+    ],
+    "syllables": [
+      {
+        "hanzi": "当",
+        "pinyin": "dāng",
+        "citationPinyin": "dāng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "然",
+        "pinyin": "rán",
+        "citationPinyin": "rán",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "可",
+        "pinyin": "ké",
+        "citationPinyin": "kě",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "以",
+        "pinyin": "yǐ",
+        "citationPinyin": "yǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-2",
+      "2-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "1-2",
+      "2-3",
+      "3-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 可以"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p033",
+    "hanzi": "没问题",
+    "gloss": "No problem",
+    "words": [
+      "没",
+      "问题"
+    ],
+    "syllables": [
+      {
+        "hanzi": "没",
+        "pinyin": "méi",
+        "citationPinyin": "méi",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "问",
+        "pinyin": "wèn",
+        "citationPinyin": "wèn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "题",
+        "pinyin": "tí",
+        "citationPinyin": "tí",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-4",
+      "4-2"
+    ],
+    "citationTonePairs": [
+      "2-4",
+      "4-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p034",
+    "hanzi": "我不知道",
+    "gloss": "I don't know",
+    "words": [
+      "我",
+      "不",
+      "知道"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "citationPinyin": "bù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "知",
+        "pinyin": "zhī",
+        "citationPinyin": "zhī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "道",
+        "pinyin": "dào",
+        "citationPinyin": "dào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-1",
+      "1-4"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-1",
+      "1-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p035",
+    "hanzi": "我不明白",
+    "gloss": "I don't understand",
+    "words": [
+      "我",
+      "不",
+      "明白"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "citationPinyin": "bù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "明",
+        "pinyin": "míng",
+        "citationPinyin": "míng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "白",
+        "pinyin": "bái",
+        "citationPinyin": "bái",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-2",
+      "2-2"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-2",
+      "2-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p036",
+    "hanzi": "请再说一遍",
+    "gloss": "Please say it again",
+    "words": [
+      "请",
+      "再说",
+      "一遍"
+    ],
+    "syllables": [
+      {
+        "hanzi": "请",
+        "pinyin": "qǐng",
+        "citationPinyin": "qǐng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "再",
+        "pinyin": "zài",
+        "citationPinyin": "zài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "说",
+        "pinyin": "shuō",
+        "citationPinyin": "shuō",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "yí",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "遍",
+        "pinyin": "biàn",
+        "citationPinyin": "biàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-1",
+      "1-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-1",
+      "1-1",
+      "1-4"
+    ],
+    "sandhiNotes": [
+      "一 → tone 2 before tone 4"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p037",
+    "hanzi": "说慢一点",
+    "gloss": "Please speak slower",
+    "words": [
+      "说慢",
+      "一点"
+    ],
+    "syllables": [
+      {
+        "hanzi": "说",
+        "pinyin": "shuō",
+        "citationPinyin": "shuō",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "慢",
+        "pinyin": "màn",
+        "citationPinyin": "màn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "yì",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "citationPinyin": "diǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-4",
+      "4-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "1-4",
+      "4-1",
+      "1-3"
+    ],
+    "sandhiNotes": [
+      "一 → tone 4 before tone 3"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p038",
+    "hanzi": "你会说中文吗",
+    "gloss": "Do you speak Chinese?",
+    "words": [
+      "你",
+      "会",
+      "说",
+      "中文",
+      "吗"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "会",
+        "pinyin": "huì",
+        "citationPinyin": "huì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "说",
+        "pinyin": "shuō",
+        "citationPinyin": "shuō",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "中",
+        "pinyin": "zhōng",
+        "citationPinyin": "zhōng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "文",
+        "pinyin": "wén",
+        "citationPinyin": "wén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "citationPinyin": "ma",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-1",
+      "1-1",
+      "1-2",
+      "2-5"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-1",
+      "1-1",
+      "1-2",
+      "2-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p039",
+    "hanzi": "我会说一点",
+    "gloss": "I speak a little",
+    "words": [
+      "我会",
+      "说",
+      "一点"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "会",
+        "pinyin": "huì",
+        "citationPinyin": "huì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "说",
+        "pinyin": "shuō",
+        "citationPinyin": "shuō",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "yì",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "citationPinyin": "diǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-1",
+      "1-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-1",
+      "1-1",
+      "1-3"
+    ],
+    "sandhiNotes": [
+      "一 → tone 4 before tone 3"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p040",
+    "hanzi": "我在学中文",
+    "gloss": "I'm learning Chinese",
+    "words": [
+      "我",
+      "在",
+      "学",
+      "中文"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "citationPinyin": "zài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "学",
+        "pinyin": "xué",
+        "citationPinyin": "xué",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "中",
+        "pinyin": "zhōng",
+        "citationPinyin": "zhōng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "文",
+        "pinyin": "wén",
+        "citationPinyin": "wén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-2",
+      "2-1",
+      "1-2"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-2",
+      "2-1",
+      "1-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p041",
+    "hanzi": "中文很难",
+    "gloss": "Chinese is difficult",
+    "words": [
+      "中文",
+      "很难"
+    ],
+    "syllables": [
+      {
+        "hanzi": "中",
+        "pinyin": "zhōng",
+        "citationPinyin": "zhōng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "文",
+        "pinyin": "wén",
+        "citationPinyin": "wén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "难",
+        "pinyin": "nán",
+        "citationPinyin": "nán",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-2",
+      "2-3",
+      "3-2"
+    ],
+    "citationTonePairs": [
+      "1-2",
+      "2-3",
+      "3-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p042",
+    "hanzi": "但是很有意思",
+    "gloss": "But it's very interesting",
+    "words": [
+      "但是",
+      "很",
+      "有意思"
+    ],
+    "syllables": [
+      {
+        "hanzi": "但",
+        "pinyin": "dàn",
+        "citationPinyin": "dàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "citationPinyin": "shì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hén",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "意",
+        "pinyin": "yì",
+        "citationPinyin": "yì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "思",
+        "pinyin": "si",
+        "citationPinyin": "si",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-2",
+      "2-3",
+      "3-4",
+      "4-5"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-3",
+      "3-3",
+      "3-4",
+      "4-5"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 很有"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "p043",
+    "hanzi": "你去哪儿",
+    "gloss": "Where are you going?",
+    "words": [
+      "你",
+      "去",
+      "哪儿"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "citationPinyin": "qù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "哪",
+        "pinyin": "nǎ",
+        "citationPinyin": "nǎ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "儿",
+        "pinyin": "ér",
+        "citationPinyin": "ér",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-3",
+      "3-2"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-3",
+      "3-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": true
+  },
+  {
+    "id": "p044",
+    "hanzi": "我去学校",
+    "gloss": "I'm going to school",
+    "words": [
+      "我",
+      "去",
+      "学校"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "citationPinyin": "qù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "学",
+        "pinyin": "xué",
+        "citationPinyin": "xué",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "校",
+        "pinyin": "xiào",
+        "citationPinyin": "xiào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-2",
+      "2-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p045",
+    "hanzi": "我回家",
+    "gloss": "I'm going home",
+    "words": [
+      "我",
+      "回家"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "回",
+        "pinyin": "huí",
+        "citationPinyin": "huí",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "家",
+        "pinyin": "jiā",
+        "citationPinyin": "jiā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-2",
+      "2-1"
+    ],
+    "citationTonePairs": [
+      "3-2",
+      "2-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p046",
+    "hanzi": "我们走吧",
+    "gloss": "Let's go",
+    "words": [
+      "我们",
+      "走",
+      "吧"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "们",
+        "pinyin": "men",
+        "citationPinyin": "men",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "走",
+        "pinyin": "zǒu",
+        "citationPinyin": "zǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吧",
+        "pinyin": "ba",
+        "citationPinyin": "ba",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-5",
+      "5-3",
+      "3-5"
+    ],
+    "citationTonePairs": [
+      "3-5",
+      "5-3",
+      "3-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p047",
+    "hanzi": "等一下",
+    "gloss": "Wait a moment",
+    "words": [
+      "等",
+      "一下"
+    ],
+    "syllables": [
+      {
+        "hanzi": "等",
+        "pinyin": "děng",
+        "citationPinyin": "děng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "yí",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "下",
+        "pinyin": "xià",
+        "citationPinyin": "xià",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "3-1",
+      "1-4"
+    ],
+    "sandhiNotes": [
+      "一 → tone 2 before tone 4"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p048",
+    "hanzi": "快一点",
+    "gloss": "Hurry up",
+    "words": [
+      "快",
+      "一点"
+    ],
+    "syllables": [
+      {
+        "hanzi": "快",
+        "pinyin": "kuài",
+        "citationPinyin": "kuài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "yì",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "citationPinyin": "diǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "4-1",
+      "1-3"
+    ],
+    "sandhiNotes": [
+      "一 → tone 4 before tone 3"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p049",
+    "hanzi": "慢慢来",
+    "gloss": "Take your time",
+    "words": [
+      "慢慢来"
+    ],
+    "syllables": [
+      {
+        "hanzi": "慢",
+        "pinyin": "màn",
+        "citationPinyin": "màn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "慢",
+        "pinyin": "màn",
+        "citationPinyin": "màn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "来",
+        "pinyin": "lái",
+        "citationPinyin": "lái",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-2"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p050",
+    "hanzi": "你饿了吗",
+    "gloss": "Are you hungry?",
+    "words": [
+      "你",
+      "饿",
+      "了",
+      "吗"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "饿",
+        "pinyin": "è",
+        "citationPinyin": "è",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "了",
+        "pinyin": "le",
+        "citationPinyin": "le",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "citationPinyin": "ma",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-5",
+      "5-5"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-5",
+      "5-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p051",
+    "hanzi": "我很饿",
+    "gloss": "I'm very hungry",
+    "words": [
+      "我",
+      "很",
+      "饿"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "饿",
+        "pinyin": "è",
+        "citationPinyin": "è",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-4"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-4"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 我很"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p052",
+    "hanzi": "我想吃饭",
+    "gloss": "I want to eat",
+    "words": [
+      "我",
+      "想",
+      "吃饭"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "想",
+        "pinyin": "xiǎng",
+        "citationPinyin": "xiǎng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "citationPinyin": "chī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "饭",
+        "pinyin": "fàn",
+        "citationPinyin": "fàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-1",
+      "1-4"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-1",
+      "1-4"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 我想"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p053",
+    "hanzi": "我们去吃饭",
+    "gloss": "Let's go eat",
+    "words": [
+      "我们",
+      "去",
+      "吃饭"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "们",
+        "pinyin": "men",
+        "citationPinyin": "men",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "citationPinyin": "qù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "citationPinyin": "chī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "饭",
+        "pinyin": "fàn",
+        "citationPinyin": "fàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-5",
+      "5-4",
+      "4-1",
+      "1-4"
+    ],
+    "citationTonePairs": [
+      "3-5",
+      "5-4",
+      "4-1",
+      "1-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p054",
+    "hanzi": "你想喝什么",
+    "gloss": "What would you like to drink?",
+    "words": [
+      "你",
+      "想",
+      "喝",
+      "什么"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "ní",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "想",
+        "pinyin": "xiǎng",
+        "citationPinyin": "xiǎng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "喝",
+        "pinyin": "hē",
+        "citationPinyin": "hē",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "什",
+        "pinyin": "shén",
+        "citationPinyin": "shén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "么",
+        "pinyin": "me",
+        "citationPinyin": "me",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-1",
+      "1-2",
+      "2-5"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-1",
+      "1-2",
+      "2-5"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 你想"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p055",
+    "hanzi": "我要一杯茶",
+    "gloss": "I'd like a cup of tea",
+    "words": [
+      "我要",
+      "一杯",
+      "茶"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "citationPinyin": "yào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "yì",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "杯",
+        "pinyin": "bēi",
+        "citationPinyin": "bēi",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "茶",
+        "pinyin": "chá",
+        "citationPinyin": "chá",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-4",
+      "4-1",
+      "1-2"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-1",
+      "1-1",
+      "1-2"
+    ],
+    "sandhiNotes": [
+      "一 → tone 4 before tone 1"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p056",
+    "hanzi": "我要喝水",
+    "gloss": "I want to drink water",
+    "words": [
+      "我要",
+      "喝水"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "citationPinyin": "yào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "喝",
+        "pinyin": "hē",
+        "citationPinyin": "hē",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "水",
+        "pinyin": "shuǐ",
+        "citationPinyin": "shuǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-1",
+      "1-3"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-1",
+      "1-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p057",
+    "hanzi": "好吃吗",
+    "gloss": "Does it taste good?",
+    "words": [
+      "好吃",
+      "吗"
+    ],
+    "syllables": [
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "citationPinyin": "chī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "citationPinyin": "ma",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-1",
+      "1-5"
+    ],
+    "citationTonePairs": [
+      "3-1",
+      "1-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p058",
+    "hanzi": "非常好吃",
+    "gloss": "It's delicious",
+    "words": [
+      "非常",
+      "好吃"
+    ],
+    "syllables": [
+      {
+        "hanzi": "非",
+        "pinyin": "fēi",
+        "citationPinyin": "fēi",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "常",
+        "pinyin": "cháng",
+        "citationPinyin": "cháng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "citationPinyin": "chī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-2",
+      "2-3",
+      "3-1"
+    ],
+    "citationTonePairs": [
+      "1-2",
+      "2-3",
+      "3-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p059",
+    "hanzi": "我吃饱了",
+    "gloss": "I'm full",
+    "words": [
+      "我",
+      "吃饱",
+      "了"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吃",
+        "pinyin": "chī",
+        "citationPinyin": "chī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "饱",
+        "pinyin": "bǎo",
+        "citationPinyin": "bǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "了",
+        "pinyin": "le",
+        "citationPinyin": "le",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-1",
+      "1-3",
+      "3-5"
+    ],
+    "citationTonePairs": [
+      "3-1",
+      "1-3",
+      "3-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p060",
+    "hanzi": "买单",
+    "gloss": "The bill, please",
+    "words": [
+      "买单"
+    ],
+    "syllables": [
+      {
+        "hanzi": "买",
+        "pinyin": "mǎi",
+        "citationPinyin": "mǎi",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "单",
+        "pinyin": "dān",
+        "citationPinyin": "dān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-1"
+    ],
+    "citationTonePairs": [
+      "3-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p061",
+    "hanzi": "今天天气很好",
+    "gloss": "The weather is nice today",
+    "words": [
+      "今天天气",
+      "很",
+      "好"
+    ],
+    "syllables": [
+      {
+        "hanzi": "今",
+        "pinyin": "jīn",
+        "citationPinyin": "jīn",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "citationPinyin": "tiān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "citationPinyin": "tiān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "气",
+        "pinyin": "qì",
+        "citationPinyin": "qì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hén",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-1",
+      "1-1",
+      "1-4",
+      "4-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "1-1",
+      "1-1",
+      "1-4",
+      "4-3",
+      "3-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 很好"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p062",
+    "hanzi": "明天会下雨",
+    "gloss": "It will rain tomorrow",
+    "words": [
+      "明天",
+      "会",
+      "下雨"
+    ],
+    "syllables": [
+      {
+        "hanzi": "明",
+        "pinyin": "míng",
+        "citationPinyin": "míng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "citationPinyin": "tiān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "会",
+        "pinyin": "huì",
+        "citationPinyin": "huì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "下",
+        "pinyin": "xià",
+        "citationPinyin": "xià",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "雨",
+        "pinyin": "yǔ",
+        "citationPinyin": "yǔ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-1",
+      "1-4",
+      "4-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "2-1",
+      "1-4",
+      "4-4",
+      "4-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p063",
+    "hanzi": "昨天很冷",
+    "gloss": "Yesterday was cold",
+    "words": [
+      "昨天",
+      "很",
+      "冷"
+    ],
+    "syllables": [
+      {
+        "hanzi": "昨",
+        "pinyin": "zuó",
+        "citationPinyin": "zuó",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "citationPinyin": "tiān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hén",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "冷",
+        "pinyin": "lěng",
+        "citationPinyin": "lěng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-1",
+      "1-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "2-1",
+      "1-3",
+      "3-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 很冷"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p064",
+    "hanzi": "外面很热",
+    "gloss": "It's hot outside",
+    "words": [
+      "外面",
+      "很",
+      "热"
+    ],
+    "syllables": [
+      {
+        "hanzi": "外",
+        "pinyin": "wài",
+        "citationPinyin": "wài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "面",
+        "pinyin": "miàn",
+        "citationPinyin": "miàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "热",
+        "pinyin": "rè",
+        "citationPinyin": "rè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-3",
+      "3-4"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-3",
+      "3-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p065",
+    "hanzi": "现在几点",
+    "gloss": "What time is it now?",
+    "words": [
+      "现在",
+      "几点"
+    ],
+    "syllables": [
+      {
+        "hanzi": "现",
+        "pinyin": "xiàn",
+        "citationPinyin": "xiàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "citationPinyin": "zài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "几",
+        "pinyin": "jí",
+        "citationPinyin": "jǐ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "citationPinyin": "diǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-3",
+      "3-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 几点"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p066",
+    "hanzi": "现在三点半",
+    "gloss": "It's three thirty",
+    "words": [
+      "现在",
+      "三点",
+      "半"
+    ],
+    "syllables": [
+      {
+        "hanzi": "现",
+        "pinyin": "xiàn",
+        "citationPinyin": "xiàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "citationPinyin": "zài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "三",
+        "pinyin": "sān",
+        "citationPinyin": "sān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "citationPinyin": "diǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "半",
+        "pinyin": "bàn",
+        "citationPinyin": "bàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-1",
+      "1-3",
+      "3-4"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-1",
+      "1-3",
+      "3-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p067",
+    "hanzi": "我七点起床",
+    "gloss": "I get up at seven",
+    "words": [
+      "我",
+      "七点",
+      "起床"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "七",
+        "pinyin": "qī",
+        "citationPinyin": "qī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "dián",
+        "citationPinyin": "diǎn",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "起",
+        "pinyin": "qǐ",
+        "citationPinyin": "qǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "床",
+        "pinyin": "chuáng",
+        "citationPinyin": "chuáng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-1",
+      "1-2",
+      "2-3",
+      "3-2"
+    ],
+    "citationTonePairs": [
+      "3-1",
+      "1-3",
+      "3-3",
+      "3-2"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 点起"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p068",
+    "hanzi": "我十点睡觉",
+    "gloss": "I go to sleep at ten",
+    "words": [
+      "我",
+      "十点",
+      "睡觉"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "十",
+        "pinyin": "shí",
+        "citationPinyin": "shí",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "citationPinyin": "diǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "睡",
+        "pinyin": "shuì",
+        "citationPinyin": "shuì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "觉",
+        "pinyin": "jiào",
+        "citationPinyin": "jiào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-2",
+      "2-3",
+      "3-4",
+      "4-4"
+    ],
+    "citationTonePairs": [
+      "3-2",
+      "2-3",
+      "3-4",
+      "4-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p069",
+    "hanzi": "你什么时候来",
+    "gloss": "When are you coming?",
+    "words": [
+      "你",
+      "什么",
+      "时候",
+      "来"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "什",
+        "pinyin": "shén",
+        "citationPinyin": "shén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "么",
+        "pinyin": "me",
+        "citationPinyin": "me",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "时",
+        "pinyin": "shí",
+        "citationPinyin": "shí",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "候",
+        "pinyin": "hòu",
+        "citationPinyin": "hòu",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "来",
+        "pinyin": "lái",
+        "citationPinyin": "lái",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-2",
+      "2-5",
+      "5-2",
+      "2-4",
+      "4-2"
+    ],
+    "citationTonePairs": [
+      "3-2",
+      "2-5",
+      "5-2",
+      "2-4",
+      "4-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p070",
+    "hanzi": "我马上来",
+    "gloss": "I'm coming right away",
+    "words": [
+      "我",
+      "马上",
+      "来"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "马",
+        "pinyin": "mǎ",
+        "citationPinyin": "mǎ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "上",
+        "pinyin": "shàng",
+        "citationPinyin": "shàng",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "来",
+        "pinyin": "lái",
+        "citationPinyin": "lái",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-4",
+      "4-2"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-4",
+      "4-2"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 我马"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p071",
+    "hanzi": "今天星期几",
+    "gloss": "What day is it today?",
+    "words": [
+      "今天",
+      "星期",
+      "几"
+    ],
+    "syllables": [
+      {
+        "hanzi": "今",
+        "pinyin": "jīn",
+        "citationPinyin": "jīn",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "citationPinyin": "tiān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "星",
+        "pinyin": "xīng",
+        "citationPinyin": "xīng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "期",
+        "pinyin": "qī",
+        "citationPinyin": "qī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "几",
+        "pinyin": "jǐ",
+        "citationPinyin": "jǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-1",
+      "1-1",
+      "1-1",
+      "1-3"
+    ],
+    "citationTonePairs": [
+      "1-1",
+      "1-1",
+      "1-1",
+      "1-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p072",
+    "hanzi": "今天星期一",
+    "gloss": "Today is Monday",
+    "words": [
+      "今天",
+      "星期一"
+    ],
+    "syllables": [
+      {
+        "hanzi": "今",
+        "pinyin": "jīn",
+        "citationPinyin": "jīn",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "citationPinyin": "tiān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "星",
+        "pinyin": "xīng",
+        "citationPinyin": "xīng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "期",
+        "pinyin": "qī",
+        "citationPinyin": "qī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "yī",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-1",
+      "1-1",
+      "1-1",
+      "1-1"
+    ],
+    "citationTonePairs": [
+      "1-1",
+      "1-1",
+      "1-1",
+      "1-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p073",
+    "hanzi": "下个星期见",
+    "gloss": "See you next week",
+    "words": [
+      "下个星期",
+      "见"
+    ],
+    "syllables": [
+      {
+        "hanzi": "下",
+        "pinyin": "xià",
+        "citationPinyin": "xià",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "gè",
+        "citationPinyin": "gè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "星",
+        "pinyin": "xīng",
+        "citationPinyin": "xīng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "期",
+        "pinyin": "qī",
+        "citationPinyin": "qī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "见",
+        "pinyin": "jiàn",
+        "citationPinyin": "jiàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-1",
+      "1-1",
+      "1-4"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-1",
+      "1-1",
+      "1-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p074",
+    "hanzi": "你住在哪里",
+    "gloss": "Where do you live?",
+    "words": [
+      "你",
+      "住",
+      "在",
+      "哪里"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "住",
+        "pinyin": "zhù",
+        "citationPinyin": "zhù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "citationPinyin": "zài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "哪",
+        "pinyin": "ná",
+        "citationPinyin": "nǎ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "里",
+        "pinyin": "lǐ",
+        "citationPinyin": "lǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-4",
+      "4-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-4",
+      "4-3",
+      "3-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 哪里"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p075",
+    "hanzi": "我住在北京",
+    "gloss": "I live in Beijing",
+    "words": [
+      "我",
+      "住",
+      "在",
+      "北京"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "住",
+        "pinyin": "zhù",
+        "citationPinyin": "zhù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "citationPinyin": "zài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "北",
+        "pinyin": "běi",
+        "citationPinyin": "běi",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "京",
+        "pinyin": "jīng",
+        "citationPinyin": "jīng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-4",
+      "4-3",
+      "3-1"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-4",
+      "4-3",
+      "3-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p076",
+    "hanzi": "离这儿很近",
+    "gloss": "It's very close to here",
+    "words": [
+      "离",
+      "这儿",
+      "很近"
+    ],
+    "syllables": [
+      {
+        "hanzi": "离",
+        "pinyin": "lí",
+        "citationPinyin": "lí",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "这",
+        "pinyin": "zhè",
+        "citationPinyin": "zhè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "儿",
+        "pinyin": "ér",
+        "citationPinyin": "ér",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "近",
+        "pinyin": "jìn",
+        "citationPinyin": "jìn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-4",
+      "4-2",
+      "2-3",
+      "3-4"
+    ],
+    "citationTonePairs": [
+      "2-4",
+      "4-2",
+      "2-3",
+      "3-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p077",
+    "hanzi": "有点儿远",
+    "gloss": "It's a bit far",
+    "words": [
+      "有点儿",
+      "远"
+    ],
+    "syllables": [
+      {
+        "hanzi": "有",
+        "pinyin": "yóu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "citationPinyin": "diǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "儿",
+        "pinyin": "ér",
+        "citationPinyin": "ér",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "远",
+        "pinyin": "yuǎn",
+        "citationPinyin": "yuǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-2",
+      "2-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 有点"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p078",
+    "hanzi": "怎么走",
+    "gloss": "How do I get there?",
+    "words": [
+      "怎么",
+      "走"
+    ],
+    "syllables": [
+      {
+        "hanzi": "怎",
+        "pinyin": "zěn",
+        "citationPinyin": "zěn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "么",
+        "pinyin": "me",
+        "citationPinyin": "me",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "走",
+        "pinyin": "zǒu",
+        "citationPinyin": "zǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-5",
+      "5-3"
+    ],
+    "citationTonePairs": [
+      "3-5",
+      "5-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p079",
+    "hanzi": "往前走",
+    "gloss": "Go straight ahead",
+    "words": [
+      "往前走"
+    ],
+    "syllables": [
+      {
+        "hanzi": "往",
+        "pinyin": "wǎng",
+        "citationPinyin": "wǎng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "前",
+        "pinyin": "qián",
+        "citationPinyin": "qián",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "走",
+        "pinyin": "zǒu",
+        "citationPinyin": "zǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "3-2",
+      "2-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p080",
+    "hanzi": "向左拐",
+    "gloss": "Turn left",
+    "words": [
+      "向",
+      "左",
+      "拐"
+    ],
+    "syllables": [
+      {
+        "hanzi": "向",
+        "pinyin": "xiàng",
+        "citationPinyin": "xiàng",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "左",
+        "pinyin": "zuó",
+        "citationPinyin": "zuǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "拐",
+        "pinyin": "guǎi",
+        "citationPinyin": "guǎi",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "4-3",
+      "3-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 左拐"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p081",
+    "hanzi": "在右边",
+    "gloss": "It's on the right",
+    "words": [
+      "在",
+      "右边"
+    ],
+    "syllables": [
+      {
+        "hanzi": "在",
+        "pinyin": "zài",
+        "citationPinyin": "zài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "右",
+        "pinyin": "yòu",
+        "citationPinyin": "yòu",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "边",
+        "pinyin": "biān",
+        "citationPinyin": "biān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-1"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p082",
+    "hanzi": "到了",
+    "gloss": "We've arrived",
+    "words": [
+      "到",
+      "了"
+    ],
+    "syllables": [
+      {
+        "hanzi": "到",
+        "pinyin": "dào",
+        "citationPinyin": "dào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "了",
+        "pinyin": "le",
+        "citationPinyin": "le",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-5"
+    ],
+    "citationTonePairs": [
+      "4-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p083",
+    "hanzi": "你有时间吗",
+    "gloss": "Do you have time?",
+    "words": [
+      "你",
+      "有",
+      "时间",
+      "吗"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "ní",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "时",
+        "pinyin": "shí",
+        "citationPinyin": "shí",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "间",
+        "pinyin": "jiān",
+        "citationPinyin": "jiān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "citationPinyin": "ma",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-2",
+      "2-1",
+      "1-5"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-2",
+      "2-1",
+      "1-5"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 你有"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p084",
+    "hanzi": "我很忙",
+    "gloss": "I'm very busy",
+    "words": [
+      "我",
+      "很",
+      "忙"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "忙",
+        "pinyin": "máng",
+        "citationPinyin": "máng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-2"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-2"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 我很"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p085",
+    "hanzi": "我没空",
+    "gloss": "I'm not free",
+    "words": [
+      "我",
+      "没空"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "没",
+        "pinyin": "méi",
+        "citationPinyin": "méi",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "空",
+        "pinyin": "kòng",
+        "citationPinyin": "kòng",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "3-2",
+      "2-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": true
+  },
+  {
+    "id": "p086",
+    "hanzi": "明天怎么样",
+    "gloss": "How about tomorrow?",
+    "words": [
+      "明天",
+      "怎么样"
+    ],
+    "syllables": [
+      {
+        "hanzi": "明",
+        "pinyin": "míng",
+        "citationPinyin": "míng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "天",
+        "pinyin": "tiān",
+        "citationPinyin": "tiān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "怎",
+        "pinyin": "zěn",
+        "citationPinyin": "zěn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "么",
+        "pinyin": "me",
+        "citationPinyin": "me",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "样",
+        "pinyin": "yàng",
+        "citationPinyin": "yàng",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-1",
+      "1-3",
+      "3-5",
+      "5-4"
+    ],
+    "citationTonePairs": [
+      "2-1",
+      "1-3",
+      "3-5",
+      "5-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p087",
+    "hanzi": "可以啊",
+    "gloss": "Sure",
+    "words": [
+      "可以",
+      "啊"
+    ],
+    "syllables": [
+      {
+        "hanzi": "可",
+        "pinyin": "ké",
+        "citationPinyin": "kě",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "以",
+        "pinyin": "yǐ",
+        "citationPinyin": "yǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "啊",
+        "pinyin": "a",
+        "citationPinyin": "a",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-5"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-5"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 可以"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p088",
+    "hanzi": "太好了",
+    "gloss": "That's great",
+    "words": [
+      "太好了"
+    ],
+    "syllables": [
+      {
+        "hanzi": "太",
+        "pinyin": "tài",
+        "citationPinyin": "tài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "了",
+        "pinyin": "le",
+        "citationPinyin": "le",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-3",
+      "3-5"
+    ],
+    "citationTonePairs": [
+      "4-3",
+      "3-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p089",
+    "hanzi": "真的吗",
+    "gloss": "Really?",
+    "words": [
+      "真的",
+      "吗"
+    ],
+    "syllables": [
+      {
+        "hanzi": "真",
+        "pinyin": "zhēn",
+        "citationPinyin": "zhēn",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "的",
+        "pinyin": "de",
+        "citationPinyin": "de",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "citationPinyin": "ma",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-5",
+      "5-5"
+    ],
+    "citationTonePairs": [
+      "1-5",
+      "5-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p090",
+    "hanzi": "我不信",
+    "gloss": "I don't believe it",
+    "words": [
+      "我",
+      "不信"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bú",
+        "citationPinyin": "bù",
+        "citationTone": 4,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "bu-sandhi"
+      },
+      {
+        "hanzi": "信",
+        "pinyin": "xìn",
+        "citationPinyin": "xìn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-4"
+    ],
+    "sandhiNotes": [
+      "不 → tone 2 before tone 4"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p091",
+    "hanzi": "开玩笑的",
+    "gloss": "I'm joking",
+    "words": [
+      "开玩笑",
+      "的"
+    ],
+    "syllables": [
+      {
+        "hanzi": "开",
+        "pinyin": "kāi",
+        "citationPinyin": "kāi",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "玩",
+        "pinyin": "wán",
+        "citationPinyin": "wán",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "笑",
+        "pinyin": "xiào",
+        "citationPinyin": "xiào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "的",
+        "pinyin": "de",
+        "citationPinyin": "de",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-2",
+      "2-4",
+      "4-5"
+    ],
+    "citationTonePairs": [
+      "1-2",
+      "2-4",
+      "4-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p092",
+    "hanzi": "别担心",
+    "gloss": "Don't worry",
+    "words": [
+      "别",
+      "担心"
+    ],
+    "syllables": [
+      {
+        "hanzi": "别",
+        "pinyin": "bié",
+        "citationPinyin": "bié",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "担",
+        "pinyin": "dān",
+        "citationPinyin": "dān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "心",
+        "pinyin": "xīn",
+        "citationPinyin": "xīn",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-1",
+      "1-1"
+    ],
+    "citationTonePairs": [
+      "2-1",
+      "1-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p093",
+    "hanzi": "放心吧",
+    "gloss": "Don't worry about it",
+    "words": [
+      "放心",
+      "吧"
+    ],
+    "syllables": [
+      {
+        "hanzi": "放",
+        "pinyin": "fàng",
+        "citationPinyin": "fàng",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "心",
+        "pinyin": "xīn",
+        "citationPinyin": "xīn",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吧",
+        "pinyin": "ba",
+        "citationPinyin": "ba",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-1",
+      "1-5"
+    ],
+    "citationTonePairs": [
+      "4-1",
+      "1-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p094",
+    "hanzi": "你身体好吗",
+    "gloss": "How is your health?",
+    "words": [
+      "你",
+      "身体",
+      "好",
+      "吗"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "身",
+        "pinyin": "shēn",
+        "citationPinyin": "shēn",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "体",
+        "pinyin": "tí",
+        "citationPinyin": "tǐ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "吗",
+        "pinyin": "ma",
+        "citationPinyin": "ma",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-1",
+      "1-2",
+      "2-3",
+      "3-5"
+    ],
+    "citationTonePairs": [
+      "3-1",
+      "1-3",
+      "3-3",
+      "3-5"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 体好"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p095",
+    "hanzi": "我有点不舒服",
+    "gloss": "I'm a little unwell",
+    "words": [
+      "我",
+      "有点",
+      "不",
+      "舒服"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yóu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "点",
+        "pinyin": "diǎn",
+        "citationPinyin": "diǎn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "citationPinyin": "bù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "舒",
+        "pinyin": "shū",
+        "citationPinyin": "shū",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "服",
+        "pinyin": "fú",
+        "citationPinyin": "fú",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-2",
+      "2-3",
+      "3-4",
+      "4-1",
+      "1-2"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-3",
+      "3-4",
+      "4-1",
+      "1-2"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 我有点"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "p096",
+    "hanzi": "你要多休息",
+    "gloss": "You should rest more",
+    "words": [
+      "你",
+      "要",
+      "多",
+      "休息"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "要",
+        "pinyin": "yào",
+        "citationPinyin": "yào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "多",
+        "pinyin": "duō",
+        "citationPinyin": "duō",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "休",
+        "pinyin": "xiū",
+        "citationPinyin": "xiū",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "息",
+        "pinyin": "xī",
+        "citationPinyin": "xī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-1",
+      "1-1",
+      "1-1"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-1",
+      "1-1",
+      "1-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p097",
+    "hanzi": "我头疼",
+    "gloss": "I have a headache",
+    "words": [
+      "我",
+      "头疼"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "头",
+        "pinyin": "tóu",
+        "citationPinyin": "tóu",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "疼",
+        "pinyin": "téng",
+        "citationPinyin": "téng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-2",
+      "2-2"
+    ],
+    "citationTonePairs": [
+      "3-2",
+      "2-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p098",
+    "hanzi": "去看医生",
+    "gloss": "Go see a doctor",
+    "words": [
+      "去",
+      "看",
+      "医生"
+    ],
+    "syllables": [
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "citationPinyin": "qù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "看",
+        "pinyin": "kàn",
+        "citationPinyin": "kàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "医",
+        "pinyin": "yī",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "生",
+        "pinyin": "shēng",
+        "citationPinyin": "shēng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-1",
+      "1-1"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-1",
+      "1-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p099",
+    "hanzi": "你家有几口人",
+    "gloss": "How many people are in your family?",
+    "words": [
+      "你家",
+      "有",
+      "几口",
+      "人"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "家",
+        "pinyin": "jiā",
+        "citationPinyin": "jiā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yóu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "几",
+        "pinyin": "jí",
+        "citationPinyin": "jǐ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "口",
+        "pinyin": "kǒu",
+        "citationPinyin": "kǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "人",
+        "pinyin": "rén",
+        "citationPinyin": "rén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-1",
+      "1-2",
+      "2-2",
+      "2-3",
+      "3-2"
+    ],
+    "citationTonePairs": [
+      "3-1",
+      "1-3",
+      "3-3",
+      "3-3",
+      "3-2"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 有几口"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "p100",
+    "hanzi": "我家有四口人",
+    "gloss": "There are four people in my family",
+    "words": [
+      "我家",
+      "有",
+      "四口",
+      "人"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "家",
+        "pinyin": "jiā",
+        "citationPinyin": "jiā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "四",
+        "pinyin": "sì",
+        "citationPinyin": "sì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "口",
+        "pinyin": "kǒu",
+        "citationPinyin": "kǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "人",
+        "pinyin": "rén",
+        "citationPinyin": "rén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-1",
+      "1-3",
+      "3-4",
+      "4-3",
+      "3-2"
+    ],
+    "citationTonePairs": [
+      "3-1",
+      "1-3",
+      "3-4",
+      "4-3",
+      "3-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p101",
+    "hanzi": "我有一个姐姐",
+    "gloss": "I have an older sister",
+    "words": [
+      "我",
+      "有",
+      "一个",
+      "姐姐"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "yí",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "gè",
+        "citationPinyin": "gè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "姐",
+        "pinyin": "jié",
+        "citationPinyin": "jiě",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "姐",
+        "pinyin": "jiě",
+        "citationPinyin": "jiě",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-2",
+      "2-4",
+      "4-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-1",
+      "1-4",
+      "4-3",
+      "3-3"
+    ],
+    "sandhiNotes": [
+      "一 → tone 2 before tone 4",
+      "third-tone sandhi across 我有",
+      "third-tone sandhi across 姐姐"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p102",
+    "hanzi": "他有两个孩子",
+    "gloss": "He has two children",
+    "words": [
+      "他",
+      "有",
+      "两个",
+      "孩子"
+    ],
+    "syllables": [
+      {
+        "hanzi": "他",
+        "pinyin": "tā",
+        "citationPinyin": "tā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yóu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "两",
+        "pinyin": "liǎng",
+        "citationPinyin": "liǎng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "gè",
+        "citationPinyin": "gè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "孩",
+        "pinyin": "hái",
+        "citationPinyin": "hái",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "子",
+        "pinyin": "zi",
+        "citationPinyin": "zi",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-2",
+      "2-3",
+      "3-4",
+      "4-2",
+      "2-5"
+    ],
+    "citationTonePairs": [
+      "1-3",
+      "3-3",
+      "3-4",
+      "4-2",
+      "2-5"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 有两"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p103",
+    "hanzi": "我的妈妈很忙",
+    "gloss": "My mother is very busy",
+    "words": [
+      "我",
+      "的",
+      "妈妈",
+      "很",
+      "忙"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "的",
+        "pinyin": "de",
+        "citationPinyin": "de",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "妈",
+        "pinyin": "mā",
+        "citationPinyin": "mā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "妈",
+        "pinyin": "mā",
+        "citationPinyin": "mā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "忙",
+        "pinyin": "máng",
+        "citationPinyin": "máng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-5",
+      "5-1",
+      "1-1",
+      "1-3",
+      "3-2"
+    ],
+    "citationTonePairs": [
+      "3-5",
+      "5-1",
+      "1-1",
+      "1-3",
+      "3-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p104",
+    "hanzi": "我爸爸是医生",
+    "gloss": "My father is a doctor",
+    "words": [
+      "我",
+      "爸爸",
+      "是",
+      "医生"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "爸",
+        "pinyin": "bà",
+        "citationPinyin": "bà",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "爸",
+        "pinyin": "bà",
+        "citationPinyin": "bà",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "是",
+        "pinyin": "shì",
+        "citationPinyin": "shì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "医",
+        "pinyin": "yī",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "生",
+        "pinyin": "shēng",
+        "citationPinyin": "shēng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-4",
+      "4-4",
+      "4-1",
+      "1-1"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-4",
+      "4-4",
+      "4-1",
+      "1-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p105",
+    "hanzi": "你多大了",
+    "gloss": "How old are you?",
+    "words": [
+      "你",
+      "多",
+      "大",
+      "了"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "多",
+        "pinyin": "duō",
+        "citationPinyin": "duō",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "大",
+        "pinyin": "dà",
+        "citationPinyin": "dà",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "了",
+        "pinyin": "le",
+        "citationPinyin": "le",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-1",
+      "1-4",
+      "4-5"
+    ],
+    "citationTonePairs": [
+      "3-1",
+      "1-4",
+      "4-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p106",
+    "hanzi": "我二十岁",
+    "gloss": "I am twenty years old",
+    "words": [
+      "我",
+      "二十岁"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "二",
+        "pinyin": "èr",
+        "citationPinyin": "èr",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "十",
+        "pinyin": "shí",
+        "citationPinyin": "shí",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "岁",
+        "pinyin": "suì",
+        "citationPinyin": "suì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-2",
+      "2-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p107",
+    "hanzi": "你的手机号码",
+    "gloss": "Your phone number",
+    "words": [
+      "你",
+      "的",
+      "手机号码"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "的",
+        "pinyin": "de",
+        "citationPinyin": "de",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "手",
+        "pinyin": "shǒu",
+        "citationPinyin": "shǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "机",
+        "pinyin": "jī",
+        "citationPinyin": "jī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "号",
+        "pinyin": "hào",
+        "citationPinyin": "hào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "码",
+        "pinyin": "mǎ",
+        "citationPinyin": "mǎ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-5",
+      "5-3",
+      "3-1",
+      "1-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "3-5",
+      "5-3",
+      "3-1",
+      "1-4",
+      "4-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p108",
+    "hanzi": "请给我打电话",
+    "gloss": "Please call me",
+    "words": [
+      "请",
+      "给",
+      "我",
+      "打电话"
+    ],
+    "syllables": [
+      {
+        "hanzi": "请",
+        "pinyin": "qíng",
+        "citationPinyin": "qǐng",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "给",
+        "pinyin": "géi",
+        "citationPinyin": "gěi",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "打",
+        "pinyin": "dǎ",
+        "citationPinyin": "dǎ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "电",
+        "pinyin": "diàn",
+        "citationPinyin": "diàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "话",
+        "pinyin": "huà",
+        "citationPinyin": "huà",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-2",
+      "2-2",
+      "2-3",
+      "3-4",
+      "4-4"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-3",
+      "3-3",
+      "3-4",
+      "4-4"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 请给我打"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "p109",
+    "hanzi": "我给你发消息",
+    "gloss": "I'll send you a message",
+    "words": [
+      "我",
+      "给",
+      "你",
+      "发消息"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "给",
+        "pinyin": "géi",
+        "citationPinyin": "gěi",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "发",
+        "pinyin": "fā",
+        "citationPinyin": "fā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "消",
+        "pinyin": "xiāo",
+        "citationPinyin": "xiāo",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "息",
+        "pinyin": "xī",
+        "citationPinyin": "xī",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-2",
+      "2-3",
+      "3-1",
+      "1-1",
+      "1-1"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-3",
+      "3-1",
+      "1-1",
+      "1-1"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 我给你"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "p110",
+    "hanzi": "听不见",
+    "gloss": "I can't hear you",
+    "words": [
+      "听不见"
+    ],
+    "syllables": [
+      {
+        "hanzi": "听",
+        "pinyin": "tīng",
+        "citationPinyin": "tīng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bú",
+        "citationPinyin": "bù",
+        "citationTone": 4,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "bu-sandhi"
+      },
+      {
+        "hanzi": "见",
+        "pinyin": "jiàn",
+        "citationPinyin": "jiàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "1-4",
+      "4-4"
+    ],
+    "sandhiNotes": [
+      "不 → tone 2 before tone 4"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p111",
+    "hanzi": "信号不好",
+    "gloss": "The signal is bad",
+    "words": [
+      "信号",
+      "不好"
+    ],
+    "syllables": [
+      {
+        "hanzi": "信",
+        "pinyin": "xìn",
+        "citationPinyin": "xìn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "号",
+        "pinyin": "hào",
+        "citationPinyin": "hào",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "citationPinyin": "bù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-4",
+      "4-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p112",
+    "hanzi": "我喜欢喝咖啡",
+    "gloss": "I like drinking coffee",
+    "words": [
+      "我",
+      "喜欢",
+      "喝咖啡"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "喜",
+        "pinyin": "xǐ",
+        "citationPinyin": "xǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "欢",
+        "pinyin": "huān",
+        "citationPinyin": "huān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "喝",
+        "pinyin": "hē",
+        "citationPinyin": "hē",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "咖",
+        "pinyin": "kā",
+        "citationPinyin": "kā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "啡",
+        "pinyin": "fēi",
+        "citationPinyin": "fēi",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-1",
+      "1-1",
+      "1-1",
+      "1-1"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-1",
+      "1-1",
+      "1-1",
+      "1-1"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 我喜"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p113",
+    "hanzi": "我不喜欢辣的",
+    "gloss": "I don't like spicy food",
+    "words": [
+      "我",
+      "不",
+      "喜欢",
+      "辣",
+      "的"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "不",
+        "pinyin": "bù",
+        "citationPinyin": "bù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "喜",
+        "pinyin": "xǐ",
+        "citationPinyin": "xǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "欢",
+        "pinyin": "huān",
+        "citationPinyin": "huān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "辣",
+        "pinyin": "là",
+        "citationPinyin": "là",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "的",
+        "pinyin": "de",
+        "citationPinyin": "de",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-3",
+      "3-1",
+      "1-4",
+      "4-5"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-3",
+      "3-1",
+      "1-4",
+      "4-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p114",
+    "hanzi": "你喜欢什么颜色",
+    "gloss": "What color do you like?",
+    "words": [
+      "你",
+      "喜欢",
+      "什么",
+      "颜色"
+    ],
+    "syllables": [
+      {
+        "hanzi": "你",
+        "pinyin": "ní",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "喜",
+        "pinyin": "xǐ",
+        "citationPinyin": "xǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "欢",
+        "pinyin": "huān",
+        "citationPinyin": "huān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "什",
+        "pinyin": "shén",
+        "citationPinyin": "shén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "么",
+        "pinyin": "me",
+        "citationPinyin": "me",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "颜",
+        "pinyin": "yán",
+        "citationPinyin": "yán",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "色",
+        "pinyin": "sè",
+        "citationPinyin": "sè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-1",
+      "1-2",
+      "2-5",
+      "5-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-1",
+      "1-2",
+      "2-5",
+      "5-2",
+      "2-4"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 你喜"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p115",
+    "hanzi": "我喜欢蓝色",
+    "gloss": "I like blue",
+    "words": [
+      "我",
+      "喜欢",
+      "蓝色"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "喜",
+        "pinyin": "xǐ",
+        "citationPinyin": "xǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "欢",
+        "pinyin": "huān",
+        "citationPinyin": "huān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "蓝",
+        "pinyin": "lán",
+        "citationPinyin": "lán",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "色",
+        "pinyin": "sè",
+        "citationPinyin": "sè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-1",
+      "1-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-1",
+      "1-2",
+      "2-4"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 我喜"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p116",
+    "hanzi": "这本书很有意思",
+    "gloss": "This book is interesting",
+    "words": [
+      "这",
+      "本书",
+      "很",
+      "有意思"
+    ],
+    "syllables": [
+      {
+        "hanzi": "这",
+        "pinyin": "zhè",
+        "citationPinyin": "zhè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "本",
+        "pinyin": "běn",
+        "citationPinyin": "běn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "书",
+        "pinyin": "shū",
+        "citationPinyin": "shū",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hén",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "有",
+        "pinyin": "yǒu",
+        "citationPinyin": "yǒu",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "意",
+        "pinyin": "yì",
+        "citationPinyin": "yì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "思",
+        "pinyin": "si",
+        "citationPinyin": "si",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-3",
+      "3-1",
+      "1-2",
+      "2-3",
+      "3-4",
+      "4-5"
+    ],
+    "citationTonePairs": [
+      "4-3",
+      "3-1",
+      "1-3",
+      "3-3",
+      "3-4",
+      "4-5"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 很有"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "p117",
+    "hanzi": "我看过这个电影",
+    "gloss": "I've seen this movie",
+    "words": [
+      "我",
+      "看过",
+      "这个",
+      "电影"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "看",
+        "pinyin": "kàn",
+        "citationPinyin": "kàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "过",
+        "pinyin": "guò",
+        "citationPinyin": "guò",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "这",
+        "pinyin": "zhè",
+        "citationPinyin": "zhè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "ge",
+        "citationPinyin": "ge",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "电",
+        "pinyin": "diàn",
+        "citationPinyin": "diàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "影",
+        "pinyin": "yǐng",
+        "citationPinyin": "yǐng",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-4",
+      "4-4",
+      "4-4",
+      "4-5",
+      "5-4",
+      "4-3"
+    ],
+    "citationTonePairs": [
+      "3-4",
+      "4-4",
+      "4-4",
+      "4-5",
+      "5-4",
+      "4-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": true
+  },
+  {
+    "id": "p118",
+    "hanzi": "我们一起去",
+    "gloss": "Let's go together",
+    "words": [
+      "我们",
+      "一起",
+      "去"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "们",
+        "pinyin": "men",
+        "citationPinyin": "men",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "一",
+        "pinyin": "yì",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "起",
+        "pinyin": "qǐ",
+        "citationPinyin": "qǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "citationPinyin": "qù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "3-5",
+      "5-4",
+      "4-3",
+      "3-4"
+    ],
+    "citationTonePairs": [
+      "3-5",
+      "5-1",
+      "1-3",
+      "3-4"
+    ],
+    "sandhiNotes": [
+      "一 → tone 4 before tone 3"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p119",
+    "hanzi": "一个人去",
+    "gloss": "Go alone",
+    "words": [
+      "一个",
+      "人去"
+    ],
+    "syllables": [
+      {
+        "hanzi": "一",
+        "pinyin": "yí",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "个",
+        "pinyin": "gè",
+        "citationPinyin": "gè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "人",
+        "pinyin": "rén",
+        "citationPinyin": "rén",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "去",
+        "pinyin": "qù",
+        "citationPinyin": "qù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-4",
+      "4-2",
+      "2-4"
+    ],
+    "citationTonePairs": [
+      "1-4",
+      "4-2",
+      "2-4"
+    ],
+    "sandhiNotes": [
+      "一 → tone 2 before tone 4"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p120",
+    "hanzi": "他跑得很快",
+    "gloss": "He runs very fast",
+    "words": [
+      "他",
+      "跑",
+      "得",
+      "很快"
+    ],
+    "syllables": [
+      {
+        "hanzi": "他",
+        "pinyin": "tā",
+        "citationPinyin": "tā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "跑",
+        "pinyin": "pǎo",
+        "citationPinyin": "pǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "得",
+        "pinyin": "dé",
+        "citationPinyin": "dé",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "很",
+        "pinyin": "hěn",
+        "citationPinyin": "hěn",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "快",
+        "pinyin": "kuài",
+        "citationPinyin": "kuài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-3",
+      "3-2",
+      "2-3",
+      "3-4"
+    ],
+    "citationTonePairs": [
+      "1-3",
+      "3-2",
+      "2-3",
+      "3-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p121",
+    "hanzi": "慢慢地说",
+    "gloss": "Speak slowly",
+    "words": [
+      "慢慢",
+      "地说"
+    ],
+    "syllables": [
+      {
+        "hanzi": "慢",
+        "pinyin": "màn",
+        "citationPinyin": "màn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "慢",
+        "pinyin": "màn",
+        "citationPinyin": "màn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "地",
+        "pinyin": "dì",
+        "citationPinyin": "dì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "说",
+        "pinyin": "shuō",
+        "citationPinyin": "shuō",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-4",
+      "4-4",
+      "4-1"
+    ],
+    "citationTonePairs": [
+      "4-4",
+      "4-4",
+      "4-1"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p122",
+    "hanzi": "请你帮我",
+    "gloss": "Please help me",
+    "words": [
+      "请",
+      "你",
+      "帮",
+      "我"
+    ],
+    "syllables": [
+      {
+        "hanzi": "请",
+        "pinyin": "qíng",
+        "citationPinyin": "qǐng",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "帮",
+        "pinyin": "bāng",
+        "citationPinyin": "bāng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "我",
+        "pinyin": "wǒ",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-3",
+      "3-1",
+      "1-3"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-1",
+      "1-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 请你"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p123",
+    "hanzi": "我可以帮你",
+    "gloss": "I can help you",
+    "words": [
+      "我",
+      "可以",
+      "帮",
+      "你"
+    ],
+    "syllables": [
+      {
+        "hanzi": "我",
+        "pinyin": "wó",
+        "citationPinyin": "wǒ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "可",
+        "pinyin": "ké",
+        "citationPinyin": "kě",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "以",
+        "pinyin": "yǐ",
+        "citationPinyin": "yǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "帮",
+        "pinyin": "bāng",
+        "citationPinyin": "bāng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-2",
+      "2-3",
+      "3-1",
+      "1-3"
+    ],
+    "citationTonePairs": [
+      "3-3",
+      "3-3",
+      "3-1",
+      "1-3"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 我可以"
+    ],
+    "needsReview": true
+  },
+  {
+    "id": "p124",
+    "hanzi": "麻烦你了",
+    "gloss": "Sorry to trouble you",
+    "words": [
+      "麻烦",
+      "你",
+      "了"
+    ],
+    "syllables": [
+      {
+        "hanzi": "麻",
+        "pinyin": "má",
+        "citationPinyin": "má",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "烦",
+        "pinyin": "fán",
+        "citationPinyin": "fán",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "nǐ",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "了",
+        "pinyin": "le",
+        "citationPinyin": "le",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-2",
+      "2-3",
+      "3-5"
+    ],
+    "citationTonePairs": [
+      "2-2",
+      "2-3",
+      "3-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p125",
+    "hanzi": "辛苦了",
+    "gloss": "Thanks for your hard work",
+    "words": [
+      "辛苦",
+      "了"
+    ],
+    "syllables": [
+      {
+        "hanzi": "辛",
+        "pinyin": "xīn",
+        "citationPinyin": "xīn",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "苦",
+        "pinyin": "kǔ",
+        "citationPinyin": "kǔ",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "了",
+        "pinyin": "le",
+        "citationPinyin": "le",
+        "citationTone": 5,
+        "surfaceTone": 5,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-3",
+      "3-5"
+    ],
+    "citationTonePairs": [
+      "1-3",
+      "3-5"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p126",
+    "hanzi": "干得好",
+    "gloss": "Well done",
+    "words": [
+      "干得",
+      "好"
+    ],
+    "syllables": [
+      {
+        "hanzi": "干",
+        "pinyin": "gàn",
+        "citationPinyin": "gàn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "得",
+        "pinyin": "dé",
+        "citationPinyin": "dé",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-2",
+      "2-3"
+    ],
+    "citationTonePairs": [
+      "4-2",
+      "2-3"
+    ],
+    "sandhiNotes": [],
+    "needsReview": true
+  },
+  {
+    "id": "p127",
+    "hanzi": "加油",
+    "gloss": "Keep it up",
+    "words": [
+      "加油"
+    ],
+    "syllables": [
+      {
+        "hanzi": "加",
+        "pinyin": "jiā",
+        "citationPinyin": "jiā",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "油",
+        "pinyin": "yóu",
+        "citationPinyin": "yóu",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-2"
+    ],
+    "citationTonePairs": [
+      "1-2"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p128",
+    "hanzi": "祝你好运",
+    "gloss": "Good luck",
+    "words": [
+      "祝你好运"
+    ],
+    "syllables": [
+      {
+        "hanzi": "祝",
+        "pinyin": "zhù",
+        "citationPinyin": "zhù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "你",
+        "pinyin": "ní",
+        "citationPinyin": "nǐ",
+        "citationTone": 3,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "third-tone-sandhi"
+      },
+      {
+        "hanzi": "好",
+        "pinyin": "hǎo",
+        "citationPinyin": "hǎo",
+        "citationTone": 3,
+        "surfaceTone": 3,
+        "realization": "half",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "运",
+        "pinyin": "yùn",
+        "citationPinyin": "yùn",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "4-2",
+      "2-3",
+      "3-4"
+    ],
+    "citationTonePairs": [
+      "4-3",
+      "3-3",
+      "3-4"
+    ],
+    "sandhiNotes": [
+      "third-tone sandhi across 你好"
+    ],
+    "needsReview": false
+  },
+  {
+    "id": "p129",
+    "hanzi": "生日快乐",
+    "gloss": "Happy birthday",
+    "words": [
+      "生日快乐"
+    ],
+    "syllables": [
+      {
+        "hanzi": "生",
+        "pinyin": "shēng",
+        "citationPinyin": "shēng",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "日",
+        "pinyin": "rì",
+        "citationPinyin": "rì",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "快",
+        "pinyin": "kuài",
+        "citationPinyin": "kuài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "乐",
+        "pinyin": "lè",
+        "citationPinyin": "lè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-4",
+      "4-4",
+      "4-4"
+    ],
+    "citationTonePairs": [
+      "1-4",
+      "4-4",
+      "4-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p130",
+    "hanzi": "新年快乐",
+    "gloss": "Happy New Year",
+    "words": [
+      "新年快乐"
+    ],
+    "syllables": [
+      {
+        "hanzi": "新",
+        "pinyin": "xīn",
+        "citationPinyin": "xīn",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "年",
+        "pinyin": "nián",
+        "citationPinyin": "nián",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "快",
+        "pinyin": "kuài",
+        "citationPinyin": "kuài",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "乐",
+        "pinyin": "lè",
+        "citationPinyin": "lè",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "1-2",
+      "2-4",
+      "4-4"
+    ],
+    "citationTonePairs": [
+      "1-2",
+      "2-4",
+      "4-4"
+    ],
+    "sandhiNotes": [],
+    "needsReview": false
+  },
+  {
+    "id": "p131",
+    "hanzi": "一路平安",
+    "gloss": "Have a safe trip",
+    "words": [
+      "一路平安"
+    ],
+    "syllables": [
+      {
+        "hanzi": "一",
+        "pinyin": "yí",
+        "citationPinyin": "yī",
+        "citationTone": 1,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": "yi-sandhi"
+      },
+      {
+        "hanzi": "路",
+        "pinyin": "lù",
+        "citationPinyin": "lù",
+        "citationTone": 4,
+        "surfaceTone": 4,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "平",
+        "pinyin": "píng",
+        "citationPinyin": "píng",
+        "citationTone": 2,
+        "surfaceTone": 2,
+        "realization": "full",
+        "sandhiRule": null
+      },
+      {
+        "hanzi": "安",
+        "pinyin": "ān",
+        "citationPinyin": "ān",
+        "citationTone": 1,
+        "surfaceTone": 1,
+        "realization": "full",
+        "sandhiRule": null
+      }
+    ],
+    "tonePairs": [
+      "2-4",
+      "4-2",
+      "2-1"
+    ],
+    "citationTonePairs": [
+      "1-4",
+      "4-2",
+      "2-1"
+    ],
+    "sandhiNotes": [
+      "一 → tone 2 before tone 4"
+    ],
+    "needsReview": false
+  }
+]

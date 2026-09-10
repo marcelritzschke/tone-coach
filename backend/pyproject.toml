@@ -5,53 +5,64 @@ build-backend = "hatchling.build"
 [project]
 name = "tone-coach-backend"
 dynamic = ["version"]
-description = "Backend for Tone Coach (FastAPI + Pitch Analysis)"
+description = "Backend for Tone Coach (FastAPI + Praat pitch analysis)"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.12"
 license = "MIT"
-keywords = []
+keywords = ["mandarin", "pronunciation", "pitch", "praat"]
 authors = [
   { name = "Marcel Ritzschke", email = "24395815+marcelritzschke@users.noreply.github.com" },
 ]
 classifiers = [
-  "Development Status :: 4 - Beta",
-  "Programming Language :: Python",
-  "Programming Language :: Python :: 3.8",
-  "Programming Language :: Python :: 3.9",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
+  "Development Status :: 3 - Alpha",
   "Programming Language :: Python :: 3.12",
-  "Programming Language :: Python :: Implementation :: CPython",
-  "Programming Language :: Python :: Implementation :: PyPy",
+  "Programming Language :: Python :: 3.13",
 ]
 dependencies = [
-  "praat-parselmouth",
+  "av",                  # in-process audio decoding; replaces pydub + the ffmpeg binary
+  "edge-tts",            # reference voice, behind app.services.voice.ReferenceVoice
   "fastapi",
-  "uvicorn[standard]",
+  "numpy",
+  "praat-parselmouth",
   "pydantic",
   "python-multipart",
-  "pydub",
+  "uvicorn[standard]",
+]
+
+[project.optional-dependencies]
+# Only needed to regenerate the phrase corpus, never at runtime.
+corpus = [
+  "g2pM",
+  "jieba",
+  "pypinyin",
+]
+
+[dependency-groups]
+dev = [
+  "httpx",
+  "mypy>=1.0.0",
+  "pytest",
+  "pytest-asyncio",
   "ruff",
-  "elevenlabs",
-  "python-dotenv"
 ]
 
 [tool.hatch.version]
 path = "app/__about__.py"
 
-[tool.hatch.envs.default.scripts]
-start = "uvicorn app.main:app --reload --port 8000"
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
 
-[tool.hatch.envs.types]
-extra-dependencies = [
-  "mypy>=1.0.0",
-]
-[tool.hatch.envs.types.scripts]
-check = "mypy --install-types --non-interactive {args:src/tone_coach tests}"
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.mypy]
+files = ["app", "scripts"]
+ignore_missing_imports = true
 
 [tool.ruff]
 exclude = ["**/__init__.py"]
-line-length = 88
+line-length = 90
 indent-width = 4
 
 [tool.ruff.format]
@@ -65,7 +76,7 @@ select = [
     "D",    # pydocstyle (docstrings)
     "N",    # pep8-naming
     "UP",   # pyupgrade
-    "B"     # flake8-bugbear
+    "B",    # flake8-bugbear
 ]
 ignore = [
     "D103", # Missing docstring in public function
@@ -76,4 +87,7 @@ fixable = ["ALL"]
 unfixable = []
 
 [tool.ruff.lint.per-file-ignores]
-"tests/**/*.py" = ["D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107"] # No docstrings in tests
+"tests/**/*.py" = ["D1", "D2", "D4"]
+# Response models mirror the JSON contract, which is camelCase by convention.
+"app/models/response.py" = ["N815"]
+"app/services/corpus.py" = ["N815"]

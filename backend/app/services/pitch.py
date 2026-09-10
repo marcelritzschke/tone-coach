@@ -1,123 +1,78 @@
-import tempfile
-from io import BytesIO
+"""Pitch extraction.
+
+Wraps Praat, via parselmouth, to turn decoded samples into an f0 contour.
+
+Normalisation, alignment and scoring are deliberately not here — they belong to the
+analysis layer built in M1. This module answers one question: what was the
+fundamental frequency at each moment?
+"""
+
+from __future__ import annotations
 
 import numpy as np
 import parselmouth
-from pydub import AudioSegment
 
-from app.models.response import PitchResponse
+from app.services.audio import decode
 
-SAMPLE_RATE_FOR_ANALYZE = 44100
-NUM_CHANNELS_FOR_ANALYZE = 1
+#: Praat frame rate. 10 ms is the usual choice for prosody work: fine enough to see a
+#: tone contour turn, coarse enough that a syllable is still tens of frames.
+TIME_STEP = 0.01
 
-
-def filter_unvoiced_frames(times, freqs):
-    valid = (~np.isnan(freqs)) & (freqs > 0)
-    return times[valid], freqs[valid]
-
-
-def filter_outlier_frames(times, freqs):
-    if len(freqs) == 0:
-        return times, freqs
-
-    times = np.array(times)
-    freqs = np.array(freqs)
-
-    median_pitch = np.median(freqs)
-    max_allowed = median_pitch * 2  # Allow up to 2x (next octave)
-    min_allowed = median_pitch / 2  # Allow up to 1/2x (previous octave)
-    valid = (freqs < max_allowed) & (freqs > min_allowed)
-
-    return times[valid], freqs[valid]
+#: Bounds for the first pass. Wide enough for any adult speaker of either sex; the
+#: second pass narrows to the individual, which is what stops octave errors.
+COARSE_FLOOR = 60.0
+COARSE_CEILING = 600.0
 
 
-def smooth_curve(freqs, window=5):
-    if window > 1 and len(freqs) >= window:
-        return np.convolve(freqs, np.ones(window) / window, mode="same")
-    else:
-        return freqs
+class PitchError(ValueError):
+    """The audio could not be pitch-tracked."""
 
 
-def add_gaps(times, freqs, gap_threshold=0.01):
-    new_times = [times[0]]
-    new_freqs = [freqs[0]]
-    for i in range(1, len(times)):
-        if times[i] - times[i - 1] > gap_threshold + 1e-5:
-            # Insert NaN to break line
-            new_times.append(times[i])
-            new_freqs.append(np.nan)
-        new_times.append(times[i])
-        new_freqs.append(freqs[i])
-    return new_times, new_freqs
+def _track(sound: parselmouth.Sound, floor: float, ceiling: float) -> np.ndarray:
+    pitch = sound.to_pitch_ac(
+        time_step=TIME_STEP, pitch_floor=floor, pitch_ceiling=ceiling
+    )
+    return np.asarray(pitch.selected_array["frequency"], dtype=np.float64)
 
 
-def extract_pitch(audio_file: AudioSegment, filter=False):
-    """Extract pitch (frequency) values from WAV audio data using Parselmouth.
+def extract_pitch(samples: np.ndarray, sample_rate: int) -> tuple[np.ndarray, np.ndarray]:
+    """Return ``(times, frequencies)`` in seconds and hertz, 0 Hz where unvoiced.
 
-    Parameters
-    ----------
-    sound_data : bytes
-        WAV audio data as bytes.
-    filter : bool, optional
-        Whether to filter unvoiced and outlier frames and smooth the pitch curve.
-
-    Returns
-    -------
-    tuple of np.ndarray
-        Tuple containing times (in seconds) and corresponding frequency values (in Hz).
-
+    Two passes. The first finds the speaker's range with Praat's default-ish wide
+    bounds; the second re-runs bounded to that speaker. Praat's own guidance is that
+    a range fitted to the voice removes most octave jumps, which is the failure the
+    original code tried to clean up afterwards with a median filter.
     """
-    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
-        audio_file.export(tmp.name, format="wav")
-        tmp_path = tmp.name
-    try:
-        sound = parselmouth.Sound(tmp_path)
-        pitch = sound.to_pitch_ac()
-        times = pitch.xs().tolist()
-        freqs = pitch.selected_array["frequency"].tolist()
-        sampling_rate = times[1] - times[0]
+    if samples.size == 0:
+        raise PitchError("no samples to analyse")
 
-        if filter:
-        #     times, freqs = filter_unvoiced_frames(times, freqs)
-            # times, freqs = filter_outlier_frames(times, freqs)
-        #     times, freqs = add_gaps(times, freqs, gap_threshold=sampling_rate)
-            freqs = smooth_curve(freqs, window=1)
+    sound = parselmouth.Sound(samples.astype(np.float64), sampling_frequency=sample_rate)
 
-        return times, freqs
-    finally:
-        # Clean up the temporary file
-        import os
+    coarse = _track(sound, COARSE_FLOOR, COARSE_CEILING)
+    voiced = coarse[coarse > 0]
+    if voiced.size == 0:
+        raise PitchError(
+            "no voiced frames detected — the recording may be silent or noisy"
+        )
 
-        os.remove(tmp_path)
+    q25, q75 = np.percentile(voiced, [25, 75])
+    floor = max(COARSE_FLOOR, 0.75 * q25)
+    ceiling = min(COARSE_CEILING, 1.5 * q75)
+    # A near-monotone speaker can collapse the two bounds; Praat needs headroom.
+    if ceiling <= floor * 1.5:
+        floor, ceiling = COARSE_FLOOR, COARSE_CEILING
 
-
-def analyze_recorded_audio(audio_bytes: bytes) -> PitchResponse:
-    """Use Parselmouth to extract pitch curve."""
-    audio = AudioSegment.from_file(BytesIO(audio_bytes), format="webm")
-    audio = audio.set_channels(NUM_CHANNELS_FOR_ANALYZE)
-    audio = audio.set_frame_rate(SAMPLE_RATE_FOR_ANALYZE)
-    audio = audio.set_sample_width(2)  # 16-bit PCM
-
-    times, pitch = extract_pitch(audio, filter=True)
-
-    return PitchResponse(
-        time=times,
-        pitch=pitch,
-        message="Pitch analysis successful (mock data).",
-    )
+    freqs = _track(sound, floor, ceiling)
+    times = np.arange(freqs.size, dtype=np.float64) * TIME_STEP
+    return times, freqs
 
 
-def analyze_tts_audio(audio_path: str) -> PitchResponse:
-    """Use Parselmouth to extract pitch curve from a TTS MP3 file."""
-    audio = AudioSegment.from_file(audio_path, format="mp3")
-    audio = audio.set_channels(NUM_CHANNELS_FOR_ANALYZE)
-    audio = audio.set_frame_rate(SAMPLE_RATE_FOR_ANALYZE)
-    audio = audio.set_sample_width(2)  # 16-bit PCM
+def voiced_fraction(freqs: np.ndarray) -> float:
+    """Share of frames carrying pitch. Low values mean noise, not speech."""
+    return float(np.count_nonzero(freqs > 0) / freqs.size) if freqs.size else 0.0
 
-    times, pitch = extract_pitch(audio, filter=True)
 
-    return PitchResponse(
-        time=times,
-        pitch=pitch,
-        message="Pitch analysis successful.",
-    )
+def analyze_audio(data: bytes) -> tuple[np.ndarray, np.ndarray]:
+    """Decode encoded audio of any browser format and extract its pitch contour."""
+    samples, sample_rate = decode(data)
+    return extract_pitch(samples, sample_rate)

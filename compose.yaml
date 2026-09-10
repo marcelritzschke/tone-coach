@@ -1,0 +1,38 @@
+# Whole setup story: `docker compose up`.
+#
+# There is no ffmpeg install step and no API key to obtain. Audio is decoded in
+# process by PyAV, and reference speech comes from edge-tts, which is keyless.
+
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      TONE_COACH_CORS_ORIGINS: http://localhost:3000
+    volumes:
+      # Synthesised reference audio survives a rebuild; it is a cache, safe to delete.
+      - reference-audio:/app/media
+    healthcheck:
+      # /health also loads the phrase corpus, so a missing corpus shows up here
+      # rather than as a 500 on the learner's first flashcard.
+      test: ["CMD", "python", "-c", "import urllib.request as r; r.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  reference-audio:

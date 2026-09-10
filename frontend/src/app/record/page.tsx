@@ -1,196 +1,175 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
+import PhraseCard from '@/components/PhraseCard';
 import ToneChart from '@/components/ToneChart';
-import TextToSpeech from '@/components/TextToSpeech';
-import { uploadAudio } from '@/lib/upload-audio';
-import { PitchAnalysisResult } from '@/types/pitch';
-import { getPhrasesCount, getPhrase } from '@/lib/fetch-phrases';
+import { analyzeRecording, fetchPhrases, fetchReference } from '@/lib/api';
+import { useRecorder } from '@/lib/use-recorder';
+import type { Phrase, PitchContour, Reference } from '@/types/pitch';
+
+type Status = 'idle' | 'loading' | 'analyzing' | 'ready';
 
 export default function RecordPage() {
-  const [phrasesCount, setPhrasesCount] = useState<number | null>(null);
-
-  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
-  const [currentPhrase, setCurrentPhrase] = useState(''); // '你在干嘛呢？'
+  const [phrases, setPhrases] = useState<Phrase[]>([]);
+  const [index, setIndex] = useState(0);
+  const [reference, setReference] = useState<Reference | null>(null);
+  const [userContour, setUserContour] = useState<PitchContour | null>(null);
+  const [userAudioUrl, setUserAudioUrl] = useState<string | null>(null);
+  const [status, setStatus] = useState<Status>('loading');
+  const [error, setError] = useState<string | null>(null);
 
   const userAudioRef = useRef<HTMLAudioElement | null>(null);
   const referenceAudioRef = useRef<HTMLAudioElement | null>(null);
-  const [audioPlayTimestamp, setAudioPlayTimestamp] = useState<number | null>(null);
-  const [selectedAudio, setSelectedAudio] = useState<'reference' | 'user'>('user');
 
-  const [isRecording, setIsRecording] = useState(false);
-  const [userAudioURL, setUserAudioURL] = useState<string | null>(null);
-  const [barPosition, setBarPosition] = useState<number | null>(null);
-  const [pitchResult, setPitchResult] = useState<PitchAnalysisResult | null>(null);
-  const [pitchResultTTS, setPitchResultTTS] = useState<PitchAnalysisResult | null>(null);
+  const phrase = phrases[index] ?? null;
 
   useEffect(() => {
-    const fetchPhrasesCount = async () => {
-      try {
-        const count = await getPhrasesCount();
-        setPhrasesCount(count);
-        if (count > 0) {
-          setCurrentIndex(0);
-        }
-      } catch (error) {
-        console.error('Error fetching phrases count:', error);
-      }
-    };
-    fetchPhrasesCount();
+    const controller = new AbortController();
+    fetchPhrases(controller.signal)
+      .then((loaded) => {
+        setPhrases(loaded);
+        setStatus('idle');
+      })
+      .catch((cause: Error) => {
+        if (controller.signal.aborted) return;
+        setError(cause.message);
+        setStatus('idle');
+      });
+    return () => controller.abort();
   }, []);
 
+  // Reset per-attempt state and load the new reference whenever the phrase changes.
   useEffect(() => {
-    const fetchPhrase = async (index: number) => {
-      try {
-        const phrase = await getPhrase(index);
-        setCurrentPhrase(phrase);
-      } catch (error) {
-        console.error('Error fetching phrase:', error);
-      }
+    if (!phrase) return;
+    const controller = new AbortController();
+
+    setReference(null);
+    setUserContour(null);
+    setError(null);
+
+    fetchReference(phrase.hanzi, controller.signal)
+      .then(setReference)
+      .catch((cause: Error) => {
+        if (!controller.signal.aborted) setError(cause.message);
+      });
+
+    return () => controller.abort();
+  }, [phrase]);
+
+  // Object URLs are leaked memory until explicitly revoked.
+  useEffect(() => {
+    return () => {
+      if (userAudioUrl) URL.revokeObjectURL(userAudioUrl);
     };
-    if (currentIndex !== null) {
-      fetchPhrase(currentIndex);
-    }
-  }, [currentIndex]);
+  }, [userAudioUrl]);
 
-  useEffect(() => {
-    if (selectedAudio === 'user') {
-      if (userAudioRef.current && audioPlayTimestamp) {
-        userAudioRef.current.currentTime = audioPlayTimestamp;
-        userAudioRef.current.play();
-      }
-    } else {
-      if (referenceAudioRef.current && audioPlayTimestamp) {
-        referenceAudioRef.current.currentTime = audioPlayTimestamp;
-        referenceAudioRef.current.play();
-      }
-    }
-  }, [audioPlayTimestamp]);
-
-  const syncVerticalBarWithAudio = (audioElement: any, setBarPosition: (pos: number) => void) => {
-    if (!audioElement) return;
-
-    const updateBarPosition = () => {
-      if (audioElement.currentTime) {
-        setBarPosition(audioElement.currentTime);
-      }
-    };
-
-    audioElement.addEventListener('timeupdate', updateBarPosition);
-    audioElement.addEventListener('ended', () => {});
-  };
-
-  useEffect(() => {
-    if (userAudioRef.current) {
-      syncVerticalBarWithAudio(userAudioRef.current, setBarPosition);
-    }
-  }, [userAudioURL, userAudioRef]);
-
-  useEffect(() => {
-    if (referenceAudioRef.current) {
-      syncVerticalBarWithAudio(referenceAudioRef.current, setBarPosition);
-    }
-  }, [referenceAudioRef]);
-
-  // Recording (simplified mock)
-  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
-  const chunksRef = useRef<Blob[]>([]);
-
-  const startRecording = async () => {
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    mediaRecorderRef.current = new MediaRecorder(stream, {
-      mimeType: 'audio/webm',
+  const handleRecording = useCallback(async (blob: Blob) => {
+    setStatus('analyzing');
+    setError(null);
+    setUserAudioUrl((previous) => {
+      if (previous) URL.revokeObjectURL(previous);
+      return URL.createObjectURL(blob);
     });
-    chunksRef.current = [];
+    try {
+      setUserContour(await analyzeRecording(blob));
+      setStatus('ready');
+    } catch (cause) {
+      setError((cause as Error).message);
+      setStatus('idle');
+    }
+  }, []);
 
-    mediaRecorderRef.current.ondataavailable = (e) => chunksRef.current.push(e.data);
-    mediaRecorderRef.current.onstop = async () => {
-      const blob = new Blob(chunksRef.current, { type: 'audio/webm' });
-      setUserAudioURL(URL.createObjectURL(blob));
-      // TODO: send blob to FastAPI backend
-      console.log('Recording stopped, uploading audio...');
-      const pitchResult = await uploadAudio(blob);
-      setPitchResult(pitchResult);
-    };
+  const recorder = useRecorder(handleRecording);
 
-    mediaRecorderRef.current.start();
-    setIsRecording(true);
+  const seek = useCallback((seconds: number, which: 'reference' | 'user') => {
+    const element = which === 'reference' ? referenceAudioRef.current : userAudioRef.current;
+    if (!element) return;
+    // Guard on null, not on truthiness: second 0 is a legitimate position.
+    element.currentTime = Math.max(0, seconds);
+    void element.play();
+  }, []);
+
+  const step = (delta: number) => {
+    if (phrases.length === 0) return;
+    setIndex((current) => (current + delta + phrases.length) % phrases.length);
   };
 
-  const stopRecording = () => {
-    mediaRecorderRef.current?.stop();
-    setIsRecording(false);
-  };
+  if (status === 'loading') {
+    return <p className="text-center my-5">Loading phrases…</p>;
+  }
 
-  const nextPhrase = () => {
-    phrasesCount && setCurrentIndex((prev) => (prev + 1) % phrasesCount);
-  };
-  const prevPhrase = () => {
-    phrasesCount && setCurrentIndex((prev) => (prev === 0 ? phrasesCount - 1 : prev - 1));
-  };
+  if (!phrase) {
+    return (
+      <div className="alert alert-danger my-5">
+        <h5>No practice phrases available</h5>
+        <p className="mb-0">{error ?? 'The phrase corpus could not be loaded.'}</p>
+      </div>
+    );
+  }
 
   return (
-    <>
-      <div className="container my-5 text-light">
-        {/* Flashcard */}
-        <div className="card bg-dark shadow p-4 mb-4">
-          {currentPhrase ? (
-            <>
-              <h2 className="mb-3">{currentPhrase}</h2>
-              <TextToSpeech
-                text={currentPhrase}
-                setPitchResultTTS={setPitchResultTTS}
-                referenceAudioRef={referenceAudioRef}
-              />
-            </>
-          ) : (
-            <h2 className="mb-3">Loading phrase...</h2>
-          )}
-        </div>
+    <div className="my-4">
+      <div className="d-flex justify-content-between align-items-center mb-3">
+        <button className="btn btn-outline-secondary" onClick={() => step(-1)}>
+          ← Previous
+        </button>
+        <span className="text-body-secondary small">
+          {index + 1} of {phrases.length}
+        </span>
+        <button className="btn btn-outline-secondary" onClick={() => step(1)}>
+          Next →
+        </button>
+      </div>
 
-        {/* Recording Controls */}
-        <div className="card bg-dark shadow p-4 mb-4">
-          <h4>Your Turn</h4>
-          {!isRecording ? (
-            <button className="btn btn-danger me-2" onClick={startRecording}>
-              ● Record
-            </button>
-          ) : (
-            <button className="btn btn-warning me-2" onClick={stopRecording}>
+      <PhraseCard phrase={phrase} />
+
+      <div className="card shadow-sm p-4 mb-4">
+        <h5>Listen</h5>
+        {reference ? (
+          <audio ref={referenceAudioRef} controls src={reference.audioUrl} className="w-100" />
+        ) : (
+          <p className="text-body-secondary mb-0">Loading reference audio…</p>
+        )}
+      </div>
+
+      <div className="card shadow-sm p-4 mb-4">
+        <h5>Your turn</h5>
+        <div className="d-flex gap-2 align-items-center flex-wrap">
+          {recorder.isRecording ? (
+            <button className="btn btn-warning" onClick={recorder.stop}>
               ■ Stop
             </button>
+          ) : (
+            <button
+              className="btn btn-danger"
+              onClick={recorder.start}
+              disabled={!recorder.isSupported || status === 'analyzing'}
+            >
+              ● Record
+            </button>
           )}
-
-          {userAudioURL && (
-            <div className="mt-3">
-              <audio ref={userAudioRef} controls src={userAudioURL}></audio>
-            </div>
-          )}
+          {status === 'analyzing' && <span className="text-body-secondary">Analysing…</span>}
         </div>
 
-        {/* Pitch Curve Chart */}
-        {userAudioURL && pitchResult && pitchResultTTS && (
-          <ToneChart
-            setAudioPlayTimestamp={setAudioPlayTimestamp}
-            selectedAudio={selectedAudio}
-            setSelectedAudio={setSelectedAudio}
-            barPosition={barPosition}
-            pitchResult={pitchResult}
-            pitchResultTTS={pitchResultTTS}
-          />
+        {userAudioUrl && (
+          <audio ref={userAudioRef} controls src={userAudioUrl} className="w-100 mt-3" />
         )}
 
-        {/* Navigation */}
-        <div className="d-flex justify-content-between mt-4">
-          <button className="btn btn-secondary" onClick={prevPhrase}>
-            ← Previous
-          </button>
-          <button className="btn btn-secondary" onClick={nextPhrase}>
-            Next →
-          </button>
-        </div>
+        {(recorder.error ?? error) && (
+          <div className="alert alert-warning mt-3 mb-0">{recorder.error ?? error}</div>
+        )}
+
+        {userContour && userContour.voicedFraction < 0.35 && (
+          <div className="alert alert-warning mt-3 mb-0">
+            That recording was mostly silence or noise. Try again somewhere quieter.
+          </div>
+        )}
       </div>
-    </>
+
+      {reference && userContour && (
+        <ToneChart reference={reference.contour} user={userContour} onSeek={seek} />
+      )}
+    </div>
   );
 }
