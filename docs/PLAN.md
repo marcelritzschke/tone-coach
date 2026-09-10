@@ -78,6 +78,39 @@ All backend, all testable without a browser. This is the point of the project.
       cells a hand-rolled implementation runs in single-digit milliseconds.
 - [ ] **Project the boundaries** through the warping path onto the learner's timeline.
 - [ ] **Score** — two numbers per syllable, see below.
+- [ ] **Validate the reference against its own labels.** See below; do this one first.
+
+### Do this before the rest of M1: make the audio and the labels agree
+
+Three independent grapheme-to-phoneme systems decide what a phrase sounds like, and
+none of them talks to the others:
+
+| System | Decides | When |
+| --- | --- | --- |
+| edge-tts (Microsoft's g2p) | what the learner **hears** | at synthesis |
+| `pypinyin` | what the learner **reads** | offline, in the corpus |
+| `g2pM` | the cross-check vote | offline, in the corpus |
+
+So a labelling mistake is audible: the card says `gān` while the reference says `gàn`.
+Today that is a display mismatch. **Once scoring lands it becomes a wrong verdict** —
+deviation is measured against the reference *contour* but the error is *named* from
+the label, so the app can say "target 1st tone, hold it flat" over a reference that
+audibly falls. That teaches a wrong tone with authority, which is worse than teaching
+nothing.
+
+The measurement itself stays honest, because deviation is computed against the
+reference rather than an idealised shape. It is only the words that go wrong.
+
+**The check:** run the tone classifier over the reference audio and quarantine any
+phrase whose measured contour disagrees with its labelled `surfaceTone`. The audio
+becomes a third vote, and the one that matters most because it is what the learner
+hears. Roughly two hours, runs in CI, and it shrinks
+`data/phrases.review.md` from "every engine disagreement" to "audio and label
+genuinely conflict" — far less to adjudicate by ear.
+
+**Its limit:** pitch catches tone mismatches only. `便宜` — `pián` versus `biàn` — is a
+different initial consonant, and no contour comparison will ever see it. Those need an
+ear or an ASR check.
 
 **Gate:** `pytest` over fixture recordings, one correct and one with a deliberately
 wrong third tone, asserting the wrong syllable is the one flagged.

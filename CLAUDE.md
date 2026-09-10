@@ -19,6 +19,14 @@ writes every disagreement to `data/phrases.review.md`. Neither is reliable alone
 g2pM misreads 银行 as `yin2 xing2`, pypinyin gets three-syllable tone-3 chains wrong.
 Entries in that file need a human ear; 17 are currently outstanding.
 
+**The audio and the labels come from different g2p engines.** edge-tts decides what
+is *heard*; `pypinyin` and `g2pM` decide what is *read*. Nothing makes them agree, so
+a labelling mistake is audible — and once scoring lands it is worse than audible,
+because deviation is measured against the reference contour while the error is named
+from the label. The app could name a tone the reference does not contain. Validating
+the reference against its own labels is the first task of M1; see
+[`docs/PLAN.md`](docs/PLAN.md).
+
 **Sandhi is product content, not preprocessing.** Each syllable carries both
 `citationTone` (as written) and `surfaceTone` (as said). The gap between them is a
 large part of what the app teaches, so it stays visible in the data and the UI.
