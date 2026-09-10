@@ -1,0 +1,136 @@
+# Seed phrase corpus for Tone Coach.
+# Format: hanzi <TAB> english gloss
+# Selected for HSK 1-2 vocabulary, short length (3-7 syllables), and coverage of
+# all 20 ordered tone pairs plus the sandhi cases the app is meant to teach.
+# Edit this file, then run: python backend/scripts/build_phrases.py
+你好	Hello
+你好吗	How are you?
+我很好	I'm doing well
+谢谢你	Thank you
+不客气	You're welcome
+对不起	I'm sorry
+没关系	It doesn't matter
+再见	Goodbye
+早上好	Good morning
+晚安	Good night
+请进	Please come in
+请坐	Please sit down
+请问	Excuse me, may I ask
+我叫小明	My name is Xiao Ming
+你叫什么名字	What is your name?
+很高兴认识你	Nice to meet you
+你是哪国人	What country are you from?
+我是中国人	I am Chinese
+我是学生	I am a student
+他是老师	He is a teacher
+这是我的书	This is my book
+那是你的包	That is your bag
+这个多少钱	How much is this?
+太贵了	That's too expensive
+便宜一点	A little cheaper
+我要买这个	I want to buy this
+我不要那个	I don't want that one
+有没有别的	Are there any others?
+我看看	Let me take a look
+好的	All right
+可以吗	Is that okay?
+当然可以	Of course
+没问题	No problem
+我不知道	I don't know
+我不明白	I don't understand
+请再说一遍	Please say it again
+说慢一点	Please speak slower
+你会说中文吗	Do you speak Chinese?
+我会说一点	I speak a little
+我在学中文	I'm learning Chinese
+中文很难	Chinese is difficult
+但是很有意思	But it's very interesting
+你去哪儿	Where are you going?
+我去学校	I'm going to school
+我回家	I'm going home
+我们走吧	Let's go
+等一下	Wait a moment
+快一点	Hurry up
+慢慢来	Take your time
+你饿了吗	Are you hungry?
+我很饿	I'm very hungry
+我想吃饭	I want to eat
+我们去吃饭	Let's go eat
+你想喝什么	What would you like to drink?
+我要一杯茶	I'd like a cup of tea
+我要喝水	I want to drink water
+好吃吗	Does it taste good?
+非常好吃	It's delicious
+我吃饱了	I'm full
+买单	The bill, please
+今天天气很好	The weather is nice today
+明天会下雨	It will rain tomorrow
+昨天很冷	Yesterday was cold
+外面很热	It's hot outside
+现在几点	What time is it now?
+现在三点半	It's three thirty
+我七点起床	I get up at seven
+我十点睡觉	I go to sleep at ten
+你什么时候来	When are you coming?
+我马上来	I'm coming right away
+今天星期几	What day is it today?
+今天星期一	Today is Monday
+下个星期见	See you next week
+你住在哪里	Where do you live?
+我住在北京	I live in Beijing
+离这儿很近	It's very close to here
+有点儿远	It's a bit far
+怎么走	How do I get there?
+往前走	Go straight ahead
+向左拐	Turn left
+在右边	It's on the right
+到了	We've arrived
+你有时间吗	Do you have time?
+我很忙	I'm very busy
+我没空	I'm not free
+明天怎么样	How about tomorrow?
+可以啊	Sure
+太好了	That's great
+真的吗	Really?
+我不信	I don't believe it
+开玩笑的	I'm joking
+别担心	Don't worry
+放心吧	Don't worry about it
+你身体好吗	How is your health?
+我有点不舒服	I'm a little unwell
+你要多休息	You should rest more
+我头疼	I have a headache
+去看医生	Go see a doctor
+你家有几口人	How many people are in your family?
+我家有四口人	There are four people in my family
+我有一个姐姐	I have an older sister
+他有两个孩子	He has two children
+我的妈妈很忙	My mother is very busy
+我爸爸是医生	My father is a doctor
+你多大了	How old are you?
+我二十岁	I am twenty years old
+你的手机号码	Your phone number
+请给我打电话	Please call me
+我给你发消息	I'll send you a message
+听不见	I can't hear you
+信号不好	The signal is bad
+我喜欢喝咖啡	I like drinking coffee
+我不喜欢辣的	I don't like spicy food
+你喜欢什么颜色	What color do you like?
+我喜欢蓝色	I like blue
+这本书很有意思	This book is interesting
+我看过这个电影	I've seen this movie
+我们一起去	Let's go together
+一个人去	Go alone
+他跑得很快	He runs very fast
+慢慢地说	Speak slowly
+请你帮我	Please help me
+我可以帮你	I can help you
+麻烦你了	Sorry to trouble you
+辛苦了	Thanks for your hard work
+干得好	Well done
+加油	Keep it up
+祝你好运	Good luck
+生日快乐	Happy birthday
+新年快乐	Happy New Year
+一路平安	Have a safe trip

@@ -1,23 +1,31 @@
-from fastapi import APIRouter
-from pathlib import Path
-import json
+"""The practice phrase corpus."""
+
+from fastapi import APIRouter, HTTPException
+
+from app.services.corpus import CorpusError, Phrase, get_phrase, load_phrases
 
 router = APIRouter(prefix="/phrases", tags=["Phrases"])
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
-PHRASES_PATH = BASE_DIR / "media" / "phrases.json"
 
-@router.get("/count")
-def get_phrases_count():
-    with open(PHRASES_PATH, "r", encoding="utf-8") as f:
-        phrases = json.load(f)
-    return {"count": len(phrases)}
+@router.get("", response_model=list[Phrase])
+def list_phrases() -> list[Phrase]:
+    """Return the whole corpus.
 
-@router.get("/{index}")
-def get_phrase(index: int):
-    with open(PHRASES_PATH, "r", encoding="utf-8") as f:
-        phrases = json.load(f)
+    It is a few hundred kilobytes and changes only when the repository does, so the
+    client fetches it once instead of making a round trip per flashcard.
+    """
+    try:
+        return list(load_phrases())
+    except CorpusError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
 
-    if 0 <= index < len(phrases):
-        return {"phrase": phrases[index]["zh"]}
-    return {"error": "Index out of range"}
+
+@router.get("/{phrase_id}", response_model=Phrase)
+def read_phrase(phrase_id: str) -> Phrase:
+    try:
+        phrase = get_phrase(phrase_id)
+    except CorpusError as exc:
+        raise HTTPException(status_code=500, detail=str(exc)) from exc
+    if phrase is None:
+        raise HTTPException(status_code=404, detail=f"No phrase with id {phrase_id!r}")
+    return phrase

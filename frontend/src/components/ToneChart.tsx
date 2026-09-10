@@ -1,19 +1,21 @@
-import { type MouseEvent, useEffect, useRef, useState } from 'react';
+'use client';
+
 import {
+  CategoryScale,
   Chart as ChartJS,
+  Legend,
+  LinearScale,
   LineElement,
   PointElement,
-  LinearScale,
   Title,
   Tooltip,
-  Legend,
-  CategoryScale,
+  type ChartOptions,
 } from 'chart.js';
 import { getRelativePosition } from 'chart.js/helpers';
-import { Chart } from 'react-chartjs-2';
+import { type MouseEvent, useState } from 'react';
+import { Line } from 'react-chartjs-2';
 
-import verticalBarPlugin from '@/lib/vertical-bar-plugin';
-import { PitchFrame, PitchAnalysisResult } from '@/types/pitch';
+import type { PitchContour, PitchFrame } from '@/types/pitch';
 
 ChartJS.register(
   LineElement,
@@ -23,180 +25,145 @@ ChartJS.register(
   Title,
   Tooltip,
   Legend,
-  verticalBarPlugin,
 );
 
 interface ToneChartProps {
-  setAudioPlayTimestamp: React.Dispatch<React.SetStateAction<any>>;
-  selectedAudio: string;
-  setSelectedAudio: React.Dispatch<React.SetStateAction<any>>;
-  barPosition: number | null;
-  pitchResult: PitchAnalysisResult;
-  pitchResultTTS: PitchAnalysisResult;
+  reference: PitchContour;
+  user: PitchContour;
+  onSeek: (seconds: number, which: 'reference' | 'user') => void;
 }
 
-const trimFrames = (frames: PitchFrame[]) => {
-  let startIndex = frames.findIndex((f) => f.pitch > 0);
-  let endIndex = [...frames].reverse().findIndex((f) => f.pitch > 0);
+/**
+ * A plotted frame. Every entry has an `x`; an unvoiced frame carries `y: null`.
+ *
+ * The point object itself is never null. Chart.js reads `.x` off each item, so a bare
+ * null in the array is a crash rather than a gap — the type here exists to keep that
+ * from being expressible.
+ */
+interface ContourPoint {
+  x: number;
+  y: number | null;
+}
 
-  if (startIndex === -1) {
-    return {
-      trimmed: [] as PitchFrame[],
-      startTime: 0,
-      endTime: 0,
-      hasVoice: false,
-    };
-  }
+interface Series {
+  points: ContourPoint[];
+  offset: number;
+}
 
-  // Adjust end index since we reversed the array
-  endIndex = frames.length - endIndex;
+/**
+ * Drop leading and trailing silence and shift the contour so speech starts at zero.
+ *
+ * This is alignment by first voiced frame only. It is not enough — a learner speaking
+ * at a different rate drifts out of phase within a couple of syllables — and it is
+ * replaced by proper time warping in M1.
+ */
+function toSeries(frames: PitchFrame[]): Series {
+  const first = frames.findIndex((frame) => frame.pitch > 0);
+  if (first === -1) return { points: [], offset: 0 };
 
-  const trimmed = frames.slice(startIndex, endIndex);
-  return {
-    trimmed,
-    startTime: frames[startIndex].time,
-    endTime: frames[endIndex - 1].time,
-    hasVoice: true,
-  };
-};
+  let last = frames.length - 1;
+  while (last > first && frames[last].pitch <= 0) last -= 1;
 
-function toXY(frames: PitchFrame[], offsetStart: number) {
-  // shift to start at 0 for display, preserve nulls for no pitch
-  return frames.map((f) => ({
-    x: f.time - offsetStart,
-    y: f.pitch > 0 ? f.pitch : null,
+  const offset = frames[first].time;
+  const points = frames.slice(first, last + 1).map((frame) => ({
+    x: frame.time - offset,
+    // A null y breaks the line at an unvoiced frame instead of dropping it to zero.
+    y: frame.pitch > 0 ? frame.pitch : null,
   }));
+  return { points, offset };
 }
 
-const ToneChart: React.FC<ToneChartProps> = ({
-  setAudioPlayTimestamp,
-  selectedAudio,
-  setSelectedAudio,
-  barPosition,
-  pitchResult,
-  pitchResultTTS,
-}) => {
-  const chartRef = useRef<ChartJS>(null);
+export default function ToneChart({ reference, user, onSeek }: ToneChartProps) {
+  const [selected, setSelected] = useState<'reference' | 'user'>('user');
 
-  const refTrim = trimFrames(pitchResultTTS.frames);
-  const usrTrim = trimFrames(pitchResult.frames);
+  const referenceSeries = toSeries(reference.frames);
+  const userSeries = toSeries(user.frames);
 
-  const referenceXY = refTrim.hasVoice ? toXY(refTrim.trimmed, refTrim.startTime) : [];
-  const userXY = usrTrim.hasVoice ? toXY(usrTrim.trimmed, usrTrim.startTime) : [];
-
-  const chartOptions = {
-    responsive: true,
-    parsing: false,
-    plugins: {
-      title: {
-        display: true,
-        text: 'Pitch Comparison',
-        font: { size: 20 },
-        fullSize: true,
+  const data = {
+    datasets: [
+      {
+        label: 'Reference',
+        data: referenceSeries.points,
+        borderColor: '#2f6690',
+        backgroundColor: '#2f6690',
+        tension: 0.3,
+        spanGaps: false,
+        pointRadius: 0,
       },
-      legend: { position: 'top' as const },
-      verticalBar: { position: null },
+      {
+        label: 'Your recording',
+        data: userSeries.points,
+        borderColor: '#b0521a',
+        backgroundColor: '#b0521a',
+        tension: 0.3,
+        spanGaps: false,
+        pointRadius: 0,
+      },
+    ],
+  };
+
+  const options: ChartOptions<'line'> = {
+    responsive: true,
+    plugins: {
+      legend: { position: 'top' },
       tooltip: {
         callbacks: {
-          // show both displayed time and original time in tooltip
-          label: (ctx: any) => {
-            const ds: any = ctx.dataset;
-            const x = ctx.parsed.x as number; // displayed seconds since first voiced frame
-            const orig = x + (ds.offsetStart ?? 0);
-            const hz = ctx.parsed.y == null ? '—' : `${Math.round(ctx.parsed.y)} Hz`;
-            return `${ds.label}: t=${x.toFixed(2)}s (orig ${orig.toFixed(2)}s), ${hz}`;
+          label: (context) => {
+            const seconds = context.parsed.x.toFixed(2);
+            const hz = context.parsed.y == null ? 'unvoiced' : `${Math.round(context.parsed.y)} Hz`;
+            return `${context.dataset.label}: ${hz} at ${seconds}s`;
           },
         },
       },
     },
     scales: {
       y: { beginAtZero: false, title: { display: true, text: 'Pitch (Hz)' } },
-      x: { type: 'linear' as const, title: { display: true, text: 'Time since voice start (s)' } },
+      x: { type: 'linear', title: { display: true, text: 'Seconds since voice start' } },
     },
   };
 
-  const chartData = {
-    // labels: timeLabels,
-    datasets: [
-      {
-        label: 'Reference',
-        data: referenceXY,
-        borderColor: '#4c8bf5',
-        backgroundColor: '#4c8bf5',
-        tension: 0.3,
-        fill: false,
-        spanGaps: false,
-        // store original offset so we can map back on clicks
-        offsetStart: refTrim.startTime,
-      },
-      {
-        label: 'Your Recording',
-        data: userXY,
-        borderColor: '#ff9800',
-        backgroundColor: '#ff9800',
-        tension: 0.3,
-        fill: false,
-        spanGaps: false,
-        // store original offset so we can map back on clicks
-        offsetStart: usrTrim.startTime,
-      },
-    ],
-  };
-
-  useEffect(() => {
-    const { current: chart } = chartRef;
-
-    if (chart && barPosition) {
-      // @ts-ignore
-      chart.options.plugins.verticalBar.position = barPosition;
-      chart.update();
-    }
-  }, [barPosition]);
-
-  const onClick = (event: MouseEvent<HTMLCanvasElement>) => {
-    const { current: chart } = chartRef;
-
-    if (!chart) {
-      return;
-    }
-
-    const canvasPosition = getRelativePosition(event.nativeEvent, chart);
-    const displayedTime = chart.scales.x.getValueForPixel(canvasPosition.x);
-    const dataY = chart.scales.y.getValueForPixel(canvasPosition.y);
-    console.log(`Clicked at X: ${displayedTime}, Y: ${dataY}`);
-
-    const datasetIndex = selectedAudio === 'reference' ? 0 : 1;
-    const ds = chart.data.datasets[datasetIndex] as any;
-    const originalTime = displayedTime + (ds.offsetStart ?? 0);
-
-    if (typeof originalTime === 'number') {
-      setAudioPlayTimestamp(originalTime);
-    }
-    console.log(`Play ${selectedAudio} audio from ${originalTime.toFixed(2)}s`);
+  const handleClick = (event: MouseEvent<HTMLCanvasElement>) => {
+    const chart = ChartJS.getChart(event.currentTarget);
+    if (!chart) return;
+    const position = getRelativePosition(event.nativeEvent, chart);
+    const displayed = chart.scales.x.getValueForPixel(position.x);
+    if (displayed === undefined) return;
+    const offset = selected === 'reference' ? referenceSeries.offset : userSeries.offset;
+    onSeek(displayed + offset, selected);
   };
 
   return (
-    <div className="card bg-dark shadow p-4">
-      <h4>Pitch Comparison</h4>
+    <div className="card shadow-sm p-4">
+      <h5>Pitch comparison</h5>
+      <p className="text-body-secondary small">
+        Both curves are raw hertz on a shared axis, so two different voices will not
+        overlap even when the tones are right. Speaker normalisation and time alignment
+        land in M1.
+      </p>
 
-      {/* Toggle buttons */}
-      <div className="form-check form-switch mb-3">
-        <input
-          className="form-check-input"
-          type="checkbox"
-          id="audioToggle"
-          checked={selectedAudio === 'reference'}
-          onChange={(e) => setSelectedAudio(e.target.checked ? 'reference' : 'user')}
-        />
-        <label className="form-check-label" htmlFor="audioToggle">
-          {selectedAudio === 'reference' ? 'Play Reference Audio' : 'Play Your Recording'}
-        </label>
+      <div className="btn-group mb-3" role="group" aria-label="Which audio to replay">
+        <button
+          type="button"
+          className={`btn btn-sm ${selected === 'user' ? 'btn-primary' : 'btn-outline-primary'}`}
+          onClick={() => setSelected('user')}
+        >
+          Replay yours
+        </button>
+        <button
+          type="button"
+          className={`btn btn-sm ${
+            selected === 'reference' ? 'btn-primary' : 'btn-outline-primary'
+          }`}
+          onClick={() => setSelected('reference')}
+        >
+          Replay reference
+        </button>
       </div>
 
-      <Chart ref={chartRef} type="line" onClick={onClick} data={chartData} options={chartOptions} />
-      <p className="mt-3">Click on the chart to replay reference from that point.</p>
+      <Line data={data} options={options} onClick={handleClick} />
+      <p className="mt-3 mb-0 small text-body-secondary">
+        Click the chart to replay the selected recording from that point.
+      </p>
     </div>
   );
-};
-
-export default ToneChart;
+}
