@@ -97,8 +97,9 @@ is built against and the input to every threshold below.
 - [ ] Playhead driven by `requestAnimationFrame` reading `audio.currentTime`.
 - [ ] Click a band to play that syllable from either recording.
 - [ ] The verdict list under the chart, in plain language.
-- [ ] Render tests. The M0 crash — a bare `null` where Chart.js expected a point —
-      compiled, linted and built clean, and only failed in front of a human.
+- [x] Render tests, added in M0 after the crash. A bare `null` where Chart.js
+      expected a point compiled, linted and built clean, and only failed in front of
+      a human; the regression test reproduces that failure exactly.
 
 Chart.js is being replaced because the chart *is* the product. The playhead already
 needed a custom plugin and a `@ts-ignore`; syllable bands, alignment ribbons and a
