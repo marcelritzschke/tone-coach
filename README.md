@@ -58,7 +58,18 @@ matches what the generator produces.
 
 ## Status
 
-M0 is complete: the project builds, runs from a clean clone, and is covered by tests
-and CI. The pitch comparison is still raw hertz on a shared axis, which is why two
-different voices do not overlap even when the tones are correct. Speaker
-normalisation, time alignment and per-syllable verdicts are M1.
+Early. The plan and its specifications live in [`docs/PLAN.md`](docs/PLAN.md);
+[`CLAUDE.md`](CLAUDE.md) carries the decisions and gotchas behind the code.
+
+| | Milestone | State |
+| --- | --- | --- |
+| M0 | A clone that runs, and a build that stays green | ✅ done |
+| M1 | The verdict pipeline — normalise, segment, align, score | next |
+| M2 | A chart that shows what the verdict says | |
+| M3 | It works on a phone | |
+| M4 | Attempt history and weak tone-pair targeting | |
+
+The pitch comparison is still raw hertz on a shared axis, so a 245 Hz reference and a
+120 Hz learner never overlap however good the tones are. Speaker normalisation, time
+alignment and per-syllable verdicts are M1 — that is the milestone the project exists
+for.
