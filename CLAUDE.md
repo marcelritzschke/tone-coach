@@ -58,8 +58,13 @@ clean, and only failed in front of a human.
 ## Verifying a change
 
 Green means all of: `ruff check`, `ruff format --check`, `mypy`, `pytest` in
-`backend/`, and `lint`, `typecheck`, `build` in `frontend/`. CI runs exactly these.
+`backend/`, and `lint`, `typecheck`, `test`, `build` in `frontend/`. CI runs exactly
+these, on every branch.
 
-A green build is not evidence the page renders. There are no frontend tests yet
-(M2 adds them), so anything touching the practice screen needs a real recording made
-in a browser before it is called done.
+Frontend tests run under Vitest with jsdom. Chart.js needs a real canvas, so
+`ToneChart` tests mock `react-chartjs-2` and assert on the data handed to it — which
+is where the defects have actually been.
+
+A green suite is still not evidence the page renders: no test drives a real
+microphone or a real canvas. Anything touching the practice screen needs a recording
+made in a browser before it is called done.

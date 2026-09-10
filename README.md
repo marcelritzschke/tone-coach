@@ -7,6 +7,15 @@ pitch contour against the reference. Unlike a pass/fail pronunciation score, the
 is to show *what your voice did* — and, from M1 onward, to name the syllable you got
 wrong and what to change.
 
+> [!IMPORTANT]
+> **17 phrases need a human ear.**
+> [`backend/data/phrases.review.md`](backend/data/phrases.review.md) lists every
+> place the two grapheme-to-phoneme engines disagreed on a reading, or where tone
+> sandhi depends on phrase grouping no library resolves reliably. Until those are
+> settled by ear, the app is teaching a handful of readings nobody has verified.
+> The corpus is the part of this project a competitor cannot copy — it is worth the
+> hour.
+
 ## Run it
 
 ```bash
